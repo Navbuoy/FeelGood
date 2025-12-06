@@ -1,0 +1,253 @@
+{
+    "Description" : {
+        "Id" : "event_mw_castle",
+        "Name" : "Castles made of Sand",
+        "Details" : "During shore leave at a quiet coastal settlement, you, Sumire and Darius take a peaceful walk along the beach. A young girl sits beside a half-finished sand castle, she works tirelessly trying to beat the incoming tide.\r\n\r\nAs the sun begins to set, she takes notice of your crew with sharp, curious eyes. Turning her attention back to her work, she eventually puts on the final touches. For such a young child, it truly is a stunningly complex piece of art.\r\n\r\nThe girl looks up at the three of you and begins to ask a flurry of questions from Starships to mechwarriors and what it means to be prepared for threats that might come from beyond the horizon.\r\n\r\nThough friendly, she speaks with the seriousness of someone carrying more weight than her age should allow.",
+        "Icon" : "uixTxrSpot_Castles"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 100,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+            "items" : [],
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "no_events_Calypso"
+            ],
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+                    "timeline_3045"
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [
+                    "timeline_3050",
+                    "event_mw_cast"
+                ],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "RequirementComparisons" : []
+        },
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "items" : [
+                    "planet_faction_kurita"
+                ],
+                "tagSetSourceFile" : "Tags/PlanetTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+                    "planet_pop_none"
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Change the subject",
+                "Details" : "Quickly change the subject",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Morale",
+                        "Details" : "Sumire kneels down to help her round out her sand fortress some more. Offering advice on which way the walls should face and what materials offer the best foundation.\r\n\r\nTaurian instincts kick in and Sumire confides, \"Remember, a castle is not just a fortification, it's also a home. A place where you should always feel safe and secure. Sometimes it's a house, other times it's a Leopard but the most important part of any home are the very people around you supporting it.\"\r\n\r\nBeaming from the revelation, the little girl replies softly, \"Thank-you. I never thought of it like that. I think I'm starting to like the word Castle? Do you think that would make a good nickname?\"\r\n\r\n\"Oh definitely!\", Sumire smiles as she stands up dusting off her legs.\r\n\r\nAfter bidding the young girl farewell. The three of you enjoy your leisurely stroll back to the Leopard with the quaint tale of the little <b>Castle</b> girl wise beyond her years.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_mw_cast"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Listen and Advise",
+                "Details" : "Offer assistance",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Listen",
+                        "Details" : "You try and lighten the mood by mentioning that one person cannot do it alone and that is the reason to surround yourself with the best crew possible. \r\n\r\nThe little girl takes a shining to Darius. She listens intently as he gets carried away explaining what it means to be the one who keeps a team safe as well as the coordinator who sees danger first. When the talk ends, she salutes him with earnest conviction. Darius returns it with a proud smile.\r\n\r\nYou slap Darius on the back praising him, \"Darius is our crew's Castle! With his organizational skill and situational awareness, they serve as the walls that keep our crew safe...for the most part.\"\r\n\r\nThe young lady stands proudly and smiles, \"Some day, I wish to be Tactical Officer.\"\r\n\r\n\"And on that day, you will be their <b>Castle</b>\", Sumire concludes.\r\n\r\nBeaming with joy, the girl stands and salutes the three of you. Darius returns it with a proud smile. After bidding the young girl farewell. \r\n\r\nDarius leans over to you, \"Really Commander, ...<i>for the most part</i>?\"\r\n\r\nPutting on your best Darius impression, \"If I were the enemy, this would be the perfect place to set an ambush.\"\r\n\r\n\"It was only that one time besides it was Sumire who dropped you there in the middle of a kill zone.\", Darius contests.\r\n\r\nSumire springs to life, \"Oh wow, throw me under the bus. If I dropped anyone anywhere it was on your intel.\"\r\n\r\nYou all continue to squabble like siblings as you enjoy your leisurely stroll back to the Leopard with the quaint tale of the little <b>Castle</b> girl wise beyond her years.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_mw_cast"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Ask why she keeps watching the distant horizon",
+                "Details" : "Inquire",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "Inquire",
+                        "Details" : "When you gently ask what she's looking for, Castle hesitates. Then she admits that months ago, her parents told her to remember one thing: 'Sometimes danger comes from the stars, not the sea.' She doesn't elaborate \u2014 perhaps she can't. \r\n\r\nSumire exchanges a subtle, uneasy glance with Darius, but the moment passes as quickly as it came. The little girl smiles again and returns to her sand fortress, the shadows behind her expression fading. \r\n\r\nLightening the mood you slap Darius on the back praising him, \"Darius is our XO and Tactical Officer. In short, he is our crew's Castle! With his organizational skill and situational awareness, they serve as the walls that keep our crew safe.\"\r\n\r\nThe young lady stands proudly and smiles, \"I like the sound of that. Some day, I wish to be Tactical Officer.\"\r\n\r\n\"And on that day, you will be their <b>Castle</b>\", Sumire concludes.\r\n\r\nAs you make your way back to the Leopard, her words linger. \r\n\r\nSumire finally blurts out, \"Who steals a kid's childhood like that?\"\r\n\r\nYou turn to Sumire and look her dead in the eye, \"You of all people know that life ain't fair. The sooner the kid realizes that, the better.\" After an awkward pause, you begin to grin, \"Besides, with the head on that kid, she's definitely a survivor!\" \r\n\r\nSharing a laugh, you make your way back to the Argo with a tale about the little <b>Castle</b> girl wise beyond her years, that's going to be a Tactical Officer some day.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_mw_cast"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

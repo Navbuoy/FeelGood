@@ -1,0 +1,277 @@
+{
+    "Description": {
+        "Cost": 3100000,
+        "Rarity": 10,
+        "Purchasable": false,
+        "Manufacturer": "",
+        "Model": "",
+        "UIName": "Armalite",
+        "Id": "chassisdef_whitworth_WTH-1AX",
+        "Name": "Whitworth",
+        "Details": "The Armalite was an early attempt to address the venerable Whitworth's shortcomings by replacing its problematic lower half internals with that of an Assassin. Boasting an Endo-Steel frame coupled with a 200XL engine, the Armalite sports a new top speed of 86.4 km/h. The saved weight allowed it to carry an AMS system along with an extra tonne of ammunition within its left torso CASE system. An additional half tonne of armour was mounted making it one of the most durable light-medium mechs around.",
+        "Icon": "uixTxrIcon_whitworth"
+    },
+    "MovementCapDefID": "movedef_mech_medium_5",
+    "PathingCapDefID": "pathingdef_medium",
+    "HardpointDataDefID": "hardpointdatadef_whitworth",
+    "PrefabIdentifier": "chrprfmech_whitworthbase-001",
+    "PrefabBase": "whitworth",
+    "Tonnage": 40,
+    "InitialTonnage": 11.5,
+    "weightClass": "MEDIUM",
+    "BattleValue": 5631267,
+    "Heatsinks": 0,
+    "TopSpeed": 240,
+    "TurnRadius": 90,
+    "MaxJumpjets": 5,
+    "Stability": 130,
+    "StabilityDefenses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "SpotterDistanceMultiplier": 1,
+    "VisibilityMultiplier": 1,
+    "SensorRangeMultiplier": 1,
+    "Signature": 0,
+    "Radius": 5,
+    "PunchesWithLeftArm": true,
+    "MeleeDamage": 40,
+    "MeleeInstability": 40,
+    "MeleeToHitModifier": 0,
+    "DFADamage": 50,
+    "DFAToHitModifier": 0,
+    "DFASelfDamage": 50,
+    "DFAInstability": 50,
+    "Locations": [
+        {
+            "Location": "Head",
+            "Hardpoints": [
+                {
+                    "WeaponMount": "AntiPersonnel",
+                    "Omni": false
+                }
+            ],
+            "Tonnage": 0,
+            "InventorySlots": 1,
+            "MaxArmor": 45,
+            "MaxRearArmor": -1,
+            "InternalStructure": 16
+        },
+        {
+            "Location": "LeftArm",
+            "Hardpoints": [
+                {
+                    "WeaponMount": "Energy",
+                    "Omni": false
+                }
+            ],
+            "Tonnage": 0,
+            "InventorySlots": 8,
+            "MaxArmor": 60,
+            "MaxRearArmor": -1,
+            "InternalStructure": 30
+        },
+        {
+            "Location": "LeftTorso",
+            "Hardpoints": [
+                {
+                    "WeaponMount": "Missile",
+                    "Omni": false
+                },
+                {
+                    "WeaponMount": "Missile",
+                    "Omni": false
+                }
+            ],
+            "Tonnage": 0,
+            "InventorySlots": 10,
+            "MaxArmor": 100,
+            "MaxRearArmor": 50,
+            "InternalStructure": 50
+        },
+        {
+            "Location": "CenterTorso",
+            "Hardpoints": [],
+            "Tonnage": 0,
+            "InventorySlots": 4,
+            "MaxArmor": 120,
+            "MaxRearArmor": 60,
+            "InternalStructure": 60
+        },
+        {
+            "Location": "RightTorso",
+            "Hardpoints": [
+                {
+                    "WeaponMount": "Missile",
+                    "Omni": false
+                },
+                {
+                    "WeaponMount": "Missile",
+                    "Omni": false
+                }
+            ],
+            "Tonnage": 0,
+            "InventorySlots": 10,
+            "MaxArmor": 100,
+            "MaxRearArmor": 50,
+            "InternalStructure": 50
+        },
+        {
+            "Location": "RightArm",
+            "Hardpoints": [
+                {
+                    "WeaponMount": "Energy",
+                    "Omni": false
+                },
+                {
+                    "WeaponMount": "Energy",
+                    "Omni": false
+                }
+            ],
+            "Tonnage": 0,
+            "InventorySlots": 8,
+            "MaxArmor": 60,
+            "MaxRearArmor": -1,
+            "InternalStructure": 30
+        },
+        {
+            "Location": "LeftLeg",
+            "Hardpoints": [],
+            "Tonnage": 0,
+            "InventorySlots": 4,
+            "MaxArmor": 100,
+            "MaxRearArmor": -1,
+            "InternalStructure": 50
+        },
+        {
+            "Location": "RightLeg",
+            "Hardpoints": [],
+            "Tonnage": 0,
+            "InventorySlots": 4,
+            "MaxArmor": 100,
+            "MaxRearArmor": -1,
+            "InternalStructure": 50
+        }
+    ],
+    "LOSSourcePositions": [
+        {
+            "x": 0,
+            "y": 12,
+            "z": 0
+        },
+        {
+            "x": 3,
+            "y": 12,
+            "z": 0
+        },
+        {
+            "x": -3,
+            "y": 12,
+            "z": 0
+        }
+    ],
+    "LOSTargetPositions": [
+        {
+            "x": 0,
+            "y": 12,
+            "z": 0
+        },
+        {
+            "x": 3,
+            "y": 12,
+            "z": 0
+        },
+        {
+            "x": -3,
+            "y": 12,
+            "z": 0
+        },
+        {
+            "x": 2.5,
+            "y": 6,
+            "z": 0
+        },
+        {
+            "x": -2.5,
+            "y": 6,
+            "z": 0
+        }
+    ],
+    "VariantName": "WTH-1AX",
+    "ChassisTags": {
+        "items": [
+      "chassis_endo",
+      "mech_case_left",
+			"mr-resize-0.83-0.83-0.83"
+		],
+        "tagSetSourceFile": ""
+    },
+    "StockRole": "Fire Support",
+    "YangsThoughts": "The Armalite was an early attempt to address the venerable Whitworth's shortcomings by replacing its problematic lower half internals with that of an Assassin. Boasting an Endo-Steel frame coupled with a 200XL engine, the Armalite sports a new top speed of 86.4 km/h. The saved weight allowed it to carry an AMS system along with an extra tonne of ammunition within its left torso CASE system. An additional half tonne of armour was mounted making it one of the most durable light-medium mechs around.",
+      "FixedEquipment": [
+	{
+      "MountedLocation": "LeftTorso",
+      "ComponentDefID": "Gear_XL_Engine",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "GUID": null,
+      "DamageLevel": "Functional",
+      "prefabName": null,
+      "hasPrefabName": false
+    },
+    {
+      "MountedLocation": "RightTorso",
+      "ComponentDefID": "Gear_XL_Engine",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "GUID": null,
+      "DamageLevel": "Functional",
+      "prefabName": null,
+      "hasPrefabName": false
+    },
+    {
+      "MountedLocation": "LeftArm",
+      "ComponentDefID": "Gear_EndoSteel_5_Slot",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "GUID": null,
+      "DamageLevel": "Functional",
+      "prefabName": null,
+      "hasPrefabName": false
+    },
+    {
+      "MountedLocation": "RightTorso",
+      "ComponentDefID": "Gear_EndoSteel_3_Slot",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "GUID": null,
+      "DamageLevel": "Functional",
+      "prefabName": null,
+      "hasPrefabName": false
+    },
+    {
+      "MountedLocation": "RightArm",
+      "ComponentDefID": "Gear_EndoSteel_5_Slot",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "GUID": null,
+      "DamageLevel": "Functional",
+      "prefabName": null,
+      "hasPrefabName": false
+    }
+  ]
+}

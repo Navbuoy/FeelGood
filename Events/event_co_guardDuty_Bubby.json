@@ -1,0 +1,179 @@
+{
+    "Description" : {
+        "Id" : "event_co_guardDuty_Bubby",
+        "Name" : "Guard Duty",
+        "Details" : "Darius turns your attention to the message on the screen, \"Looks like our old friend Uncle Bubby is at it again...\"\r\n\r\n\"What's he done now?\", you ask.\r\n\r\n\"Well, they crashed their Leopard and are asking for assistance. They just want someone to stand guard as they complete repairs.\"\r\n\r\nYou let out a sigh, \"Let me guess, it's the barter system again, right?\"\r\n\r\nDarius smiles, \"Same deal as before. His words, not mine. To be honest, his last gifted mech wasn't too bad and 250 000 CBills to just stand around sounds like easy money. What do you think?\"",
+        "Icon" : "uixTxrSpot_GD"
+    },
+    "Scope" : "Company",
+    "Weight" : 1000,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+                "event_DCBub",
+                "timeline_3044"
+            ]
+        },
+        "ExclusionTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+                "event_GD"
+            ]
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : [
+                    "planet_civ_periphery"
+                ]
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Decline the Offer.",
+                "Details" : "Non-participation Option",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Nothing happens",
+                        "Details" : "You decide to disregard the message as it's not worth your time. \r\n\r\nYou laugh, \"We're mercenaries not babysitters.\"\r\n\r\nYang interrupts, \"...but he probably had another mech to sweeten the deal. It might've been worth it to at least check it out, Boss?\"\r\n\r\nStopping to consider you might have been a bit hasty, \"Well, if he asks again, then we might take him up on his offer but for now, we look forward to bigger and better things.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : []
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Take the Offer",
+                "Details" : "Safe option",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Guard Duty",
+                        "Details" : "When the <i>Leopard</i> arrives, you spot your old pal Uncle Bubby running out of his Leopard to greet you with a taller, slender figure following in tow. \r\n\r\nGreedily shaking your hand, he begins his introductions, \"Awesome, you made it! This here is Dal Bello. Dal is one of the finest pilots this side of the Periphery.\"\r\n\r\nSmiling, she greets you with a sturdy handshake, \"Well, almost the finest, we had a not-so-perfect landing on our last run and now we need to make repairs.\" \r\n\r\nUncle Bubby points at your lance, \"And that's where you guys come in. While we complete the repairs, you just watch our backs. I'm not taking any chances this time!\"\r\n\r\nA short while later, Uncle Bubby and a small contingent of your MekTeks emerge from the patched up Leopard, \"Well, she's space worthy again. We should be able to make it back to headquarters.\"\r\n\r\nUncle Bubby continues, \"Before I forget, I got just the mech for you guys.\"\r\n\r\nYang rushes out from behind the crew, \"Don't be shy! Spill it already!\"\r\n\r\nUncle Bubby taps his chest mic and clears his throat, \"Allow me to introduce to you my latest work of art, <b>The Rock Lobster</b>!\"\r\n\r\nAs Uncle Bubby directs your attention to his Leopard's bay entrance, you witness a heavily modified Crab making its way down the ramp before jumping into the air, gliding overhead and landing gracefully well behind your crew.\r\n\r\n\"Rock Lobster! Haha, I see what you did there!\", Yang cheers,\r\n\r\n\"This project was originally slated for an 85 tonne mech. Several revisions later, we managed to distill it down to a modest 50 tonnes. This Crab can jump like the <b>CRB-27sl</b> yet its major innovation are the two enhanced Light Gauss Rifles coupled with the integrated Ballisitic module salvaged from a Shadow Hawk. Pound for pound, they hit just as hard as their big brothers. OK, that was the good news...now for the Bad news.\"\r\n\r\nYang's smile starts to wane, \"Uh oh...\"\r\n\r\n\"It has a smaller XL engine so its top speed is somewhat less than your average Crab...\"\r\n\r\n\"Well, that's not so bad\", Yang says comfortingly.\r\n\r\nUncle Bubby grimaces, \"I see you're taking it well, so here is the Ugly...I had to drop almost two tonnes of armour to make it all happen. Remember, this loadout was originally intended for a larger mech.\"  \r\n\r\n\"This is starting to sound an awful lot like a Rifleman?\", you quip.\r\n\r\nUncle Bubby's sulks, \"Well, I had to make concessions but I did manage to add a couple of ER Medium Lasers, a top of the line RangeFinder and an ECM unit!\"\r\n\r\nAt that point, the Crab's cockpit opens up to reveal Dal cradling her neurohelmet, \"Trust me, these <i>compensations</i> are more than enough. It's a first class sniper! Just treat it as such and you'll be fine.\"\r\n\r\nYang turns to you and smiles, \"Well, I'm sold. Allow me to make room in our MechBay for our new delivery.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : [
+                                    "event_GD"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Funds",
+                                    "value" : "250000",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "System_ShowRewards",
+                                    "value" : "itemCollection_loot_event_GD",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 90
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "tagSetSourceFile" : "tags/EventTags",
+        "items" : []
+    }
+}

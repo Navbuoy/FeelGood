@@ -1,0 +1,140 @@
+{
+    "Description" : {
+        "Id" : "event_mw_cutTheCordB",
+        "Name" : "Loyalty Cutting",
+        "Details" : "Responding to your hails, [[DM.BaseDescriptionDefs[LoreGemini],Gemini]], arrives at your office, \"You wish to see me Commander?\"\r\n\r\nThis time you are accompanied by Darius. You smile again exclaiming, \"It's that time again, Calista!.\"",
+        "Icon" : "uixTxrSpot_Cord"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 1000,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+            "tagSetSourceFile" : "Tags/PilotTags",
+            "items" : [
+                "name_Gemini"
+            ]
+        },
+        "ExclusionTags" : {
+            "tagSetSourceFile" : "",
+            "items" : []
+        },
+        "RequirementComparisons" : [
+            {
+                "obj" : "ExperienceSpent",
+                "op" : "GreaterThan",
+                "val" : 15000,
+                "valueConstant" : "15000"
+            }
+        ]
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "Tags/CompanyTags",
+                "items" : [
+                    "event_mw_cutA"
+                ]
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "Tags/CompanyTags",
+                "items" : [
+                    "event_mw_cutB"
+                ]
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Continue",
+                "Details" : "continue",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Cut the cord",
+                        "Details" : "Stepping closer, you gently grab her wrist and [[DM.BaseDescriptionDefs[LoreGemini],Gemini]], begins to beam with pride.\r\n\r\nYou state confidently, \"As your Bondholder, I deem that you have adequately displayed the virtue of Loyalty beyond a shadow of a doubt. I award you this snipping of the Loyalty cord.\" \r\n\r\nYou pull out your swiss army knife and use its scissors to cut one of the two remaining cords on her Bondcord as Darius applauds.\r\n\r\nGemini's face is alight. Standing proud and tall she states proudly, \"Thank-You Commander! I will not let you down!\"\r\n\r\n\"Dismissed.\", you reply. \r\n\r\nYou hear gasps in the hallway outside as Gemini shows her wrist to her crewmates. Small cheers are heard down the corridors.\r\n\r\nBoth you and Darius break out in simultaneous laughter. \r\n\r\n\"You were right Commander, that is the weirdest promotion I have ever seen!\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "event_mw_cutB"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : [
+                                    "pilot_morale_high"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 30
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "tagSetSourceFile" : "tags/EventTags",
+        "items" : []
+    }
+}

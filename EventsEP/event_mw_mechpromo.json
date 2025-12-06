@@ -1,0 +1,171 @@
+{
+    "Description" : {
+        "Id" : "event_mw_mechpromo",
+        "Name" : "Begging for a Chance",
+        "Details" : "You happen to pass by the Barracks when [[TGT_MW,{TGT_MW.Callsign}]] approaches you hesitantly with a question. \"Uh, Commander? I was wondering if I could possibly be allowed to drive a Mech.\"\r\n\r\nStopping in your tracks, you give {TGT_MW.Callsign} your full attention as they continue. \r\n\r\n\"You see, that last mission got me thinkin'. I am tired of looking up all the time. Always running away from the first sight of something bigger than me, which is pretty much all the time...even in a Schreck! Look, when I eventually do buy it and end up on that Memorial Wall, I just don't want others to see 'Grasshopper Toe-Jam' under my name! Please, if you just give me a chance... \"",
+        "Icon" : "uixTxrSpot_MechWarriorsTalking.png"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 10,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+            "items" : [
+                "pilot_nomech_crew"
+            ],
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "RequirementComparisons" : [
+            {
+                "obj" : "ExperienceSpent",
+                "op" : "GreaterThan",
+                "val" : 25000,
+                "valueConstant" : "25000"
+            }
+        ]
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Try and talk them out of it.",
+                "Details" : "Nothing Happens",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Decline",
+                        "Details" : "You smile as you attempt to sound as supportive as possible, \"Wow, that is quite the impassioned speech! You know what? I think you are selling yourself far too short. Most folks are scared of heights or suffer motion sickness once they get into the cockpit and are you really going to give-up quality Grade-A Air Conditioning just so you can sit down in some unstable two-legged oven? Trust me, most mech pilots could only dream of sitting back far from the front line lobbing missiles or strafing PPC fire from a nice cozy distance upon the OpFor. They could only dream because quite frankly they can't do what you do...try and keep that in mind next time.\"\r\n\r\n[[TGT_MW,{TGT_MW.Callsign}]] slowly nods and eventually agrees albeit grudgingly as they thank you for your time and head back into the Barracks.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : []
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Support {TGT_MW.Callsign}'s decision.",
+                "Details" : "Promotion",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Promotion",
+                        "Details" : "\"Well that settles it!\", you exclaim.\r\n\r\nYou pause to look [[TGT_MW,{TGT_MW.Callsign}]] dead in the eye and continue, \"You'll jump into the simulators and start basic training first thing tomorrow. This could be the start of something big so you better get ready.\"\r\n\r\n{TGT_MW.Callsign} pauses in complete shock. \"That's awesome! I swear I won't let you down. Thank-you Commander...th-thank-you!\"\r\n\r\n{TGT_MW.Callsign} excitedly rushes into the Barracks, telling everyone the news. Cheers and applause escape and echo down the corridors as you make your way back to the bridge. With each step, a small grin creeps across your face as you ponder the possibilities of cross-training your entire roster. Only time will tell.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_mech_pilot"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [
+                                    "pilot_nomech_crew"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "ExperienceUnspent",
+                                    "value" : "1500",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_morale_high"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 30
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

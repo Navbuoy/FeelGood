@@ -1,0 +1,130 @@
+{
+    "Description" : {
+        "Id" : "event_mw_cutTheCordA",
+        "Name" : "Combat Skill Cutting",
+        "Details" : "Responding to your hails, [[DM.BaseDescriptionDefs[LoreGemini],Gemini]], arrives at your office, \"Yes, Commander?\"\r\n\r\nArising from your chair, you turn to greet her with a smile. Mentally preparing yourself for what is to come, you carefully choose your next words.",
+        "Icon" : "uixTxrSpot_Cord"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 1000,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+            "tagSetSourceFile" : "Tags/PilotTags",
+            "items" : [
+                "name_Gemini"
+            ]
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : [
+            {
+                "obj" : "ExperienceSpent",
+                "op" : "GreaterThan",
+                "val" : 5000,
+                "valueConstant" : "5000"
+            }
+        ]
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+                    "event_mw_cutA"
+                ],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Continue",
+                "Details" : "continue",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Cut the cord",
+                        "Details" : "\"Calista, you never cease to amaze me with your efforts on the field. Time and again, you have proven youself with both your poise and situational awareness in the field.\"\r\n\r\nStepping closer to her, you gently grab her wrist as her eyes widen.\r\n\r\nYou state confidently, \"I am hereby awarding you...uh, this here snipping of the Military Skill cord.\" \r\n\r\nYou pull out your swiss army knife and use its scissors to cut one of the three cords on her Bondcord, \r\n\r\nGemini tries her best to hide a warm smile. Collecting herself she straightens up and states proudly, \"Thank-You Commander!\"\r\n\r\n\"Dismissed.\", you reply. \r\n\r\nAs you both go about your business, you chuckle as these Clan customs sure will take some getting used to. Looking over your shoulder as she leaves, you realize she's worth it.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_mw_cutA"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_morale_high"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 30
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

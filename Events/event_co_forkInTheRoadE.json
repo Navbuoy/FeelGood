@@ -1,0 +1,255 @@
+{
+    "Description" : {
+        "Id" : "event_co_forkInTheRoadE",
+        "Name" : "A Fork in the Road",
+        "Details" : "Darius summons you urgently to the Medbay Operating Theatre with pressing news. \"Commander, our salvage teams found something I think you should see...\"\r\n\r\nGathering your senses you fix your gaze upon your XO, \"O.K. you have my attention.\" \r\n\r\nStanding high above in the Medbay Operating Theatre, your XO motions to the young woman hooked up to an array medical machinery that cost you a small fortune. MedTechs dart around the Medbay tending to the various wounds she suffered. Within minutes, the doctor turns to you with a small smile signalling that she's in stable condition.\r\n\r\nWith a quizzical look on your face you turn to Darius, \"Is she who I think she is?\"\r\n\r\n\"Yes, a Jade Falcon pilot, Commander.\" \r\n\r\nDarius finally discloses his thoughts on the matter, \"Commander, I honestly don't know what to do? Word has already gotten out and the crew is spooked. Some have lost loved ones to the Clans, so there's no telling what this will do to morale.\"\r\n\r\n\"All valid points, but I hate to admint, this is too good an opportunity to pass up. We could gain some valuable intel on these Clans and how they operate giving us an edge in the field.\", you reply.\r\n\r\nDarius mulls it over, \"Maybe, we could hand her off to the Steiners? When she's fully recovered of course.\"",
+        "Icon" : "uixTxrSpot_MedBay.png"
+    },
+    "Scope" : "Company",
+    "Weight" : 100,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "items" : [
+                "timeline_3049_12_01"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "event_co_forkInTheRoad"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "items" : [
+                    "planet_name_Parakoila"
+                ],
+                "tagSetSourceFile" : "Tags/PlanetTags"
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : "Tags/PlanetTags"
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Interrogate her",
+                "Details" : "Bondsman",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Interrogate",
+                        "Details" : "Days later, your guest is healing up remarkably well. The MedTechs are stunned at both the rate she is healing as well as her overall conditioning.\r\n\r\nAfter regaining some strength, she introduces herself as Point Commander Calista Folkner of Clan Jade Falcon. She candidly discloses various aspects about the Clans: their field tactics, their rich history and even their odd customs. \r\n\r\nCalista goes on to explain that she is now your Bondsman with her wearing a Bondcord around her right wrist. This three stranded cord represents the three virtues of combat skill, integrity and loyalty. When she has displayed one of these virtues to your satisfaction, as Bondholder, you are free to cut one of the cords. Ultimately, her freedom is earned with the cutting of the final cord.\r\n\r\nAfter careful consideration, you reluctantly agree after ephasizing that as far as you're concerned, this is a binding contract with a paid salary and not indentured servitude. You realize your crew will be less than enthusiatic about her staying on but you feel you've made the right choice and in time she will prove to be an asset, both on and off the field.\r\n\r\n[[DM.BaseDescriptionDefs[LoreGemini],Gemini has joined your crew]]",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_forkInTheRoad"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_AddRoster",
+                                    "value" : "pilot_Gemini",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Let her decide",
+                "Details" : "Bondsman",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Bondsman",
+                        "Details" : "Days later, your guest is healing up remarkably well. The MedTechs are stunned at both the rate she is healing as well as her overall conditioning.\r\n\r\nAfter regaining some strength, she introduces herself as Point Commander Calista Folkner of Clan Jade Falcon. She candidly discloses various aspects about the Clans: their field tactics, their rich history and even their odd customs. \r\n\r\nCalista goes on to explain that she is now your Bondsman with her wearing a Bondcord around her right wrist. This three stranded cord represents the three virtues of combat skill, integrity and loyalty. When she has displayed one of these virtues to your satisfaction, as Bondholder, you are free to cut one of the cords. Ultimately, her freedom is earned with the cutting of the final cord.\r\n\r\nAfter careful consideration, you reluctantly agree after ephasizing that as far as you're concerned, this is a binding contract with a paid salary and not indentured servitude. You realize your crew will be less than enthusiatic about her staying on but you feel you've made the right choice and in time she will prove to be an asset, both on and off the field.\r\n\r\n[[DM.BaseDescriptionDefs[LoreGemini],Gemini has joined your crew]]",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_forkInTheRoad"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_AddRoster",
+                                    "value" : "pilot_Gemini",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Hand her over to House Steiner",
+                "Details" : "Hand her over to Steiner",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "Handover",
+                        "Details" : "Taking the crew's tense state into consideration, you conclude that it's best to hand her over to House Steiner. Darius eagerly nods and is visibly relieved when she is finally in the custody of Lyran Intelligence Officers.\r\n\r\nYour XO circles back and quips, \"Well looks like we made House Steiner happy.\" \r\n\r\nAfter an awkward pause, \"Commander, do you think we did the right thing?\"\r\n\r\nWithout hesitation, you mutter, \"It beats having a bloody mutiny on our hands! Whatever she is, she is not worth the trouble! She should be grateful we didn't hand her over to the Combine!\"\r\n\r\nDarius nods in agreement as you both board the Leopard, happily looking forward to your next lucrative contract.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : "Tags/CompanyTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Reputation.Steiner",
+                                    "value" : "3",
+                                    "set" : false,
+                                    "valueConstant" : "[rep_gain_large]"
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

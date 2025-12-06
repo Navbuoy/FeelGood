@@ -1,0 +1,57 @@
+{
+    "Description": {
+        "Id": "pilot_Gemini",
+        "Name": "Gemini",
+        "FirstName": "Calista",
+        "LastName": "Folkner",
+        "Callsign": "Gemini",
+        "Gender": "Female",
+        "factionID": "NoFaction",
+        "Age": 28,
+        "Details": "Point Commander Calista Folkner was found near death in her fallen Mad Dog. Her star appears to have suffered heavy casualties in their last encounter and it was pure happenstance that your salvage crews stumbled upon her before anyone else did. It was through your team's humanitarian efforts that Calista managed to survive much to her chagrin. Starting her new mercenary career as your bondsman, she is lending her unique insights as well as her incomparable skills to your crew, both on and off the battlefield.",
+        "Icon": "guiTxrPort_Gemini"
+    },
+    "BaseGunnery": "8",
+    "BonusGunnery": 0,
+    "BasePiloting": "4",
+    "BonusPiloting": 0,
+    "BaseGuts": "4",
+    "BonusGuts": 0,
+    "BaseTactics": "4",
+    "BonusTactics": 0,
+    "ExperienceUnspent": 2500,
+    "ExperienceSpent": 18200,
+    "Injuries": 0,
+    "Health": 3,
+    "LethalInjury": false,
+    "Incapacitated": false,
+    "Morale": 0,
+    "Voice": "f_pro01_brit",
+    "abilityDefNames": [
+                "TraitDefUnsteadySet60",
+                "TraitDefHealthAddOne",
+                "TraitDefIndirectReduceOne",
+		        "AbilityDefG5",
+		        "AbilityDefG8"
+    ],
+    "AIPersonality": "Undefined",
+    "PilotTags": {
+        "items": [
+            "pilot_periphery",
+			"pilot_lucky",
+			"pilot_athletic",
+            "pilot_brave",
+            "pilot_officer",
+            "pilot_military",
+            "pilot_mechwarrior",
+            "name_Gemini",
+			"TBD_ronin",
+			"BLACKLISTED"
+        ],
+        "tagSetSourceFile": ""
+    },
+    "PilotCost": 0,
+    "IsRonin": true,
+    "IsVanguard": false,
+	"RoninRequiresWhitelist": true
+}

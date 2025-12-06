@@ -1,0 +1,192 @@
+{
+    "Description" : {
+        "Id" : "event_mw_spectre",
+        "Name" : "Inspiring Ghosts",
+        "Details" : "Sitting next to a pool table at the local pool hall, you watch as your Salvage and Ground crews enjoy some much needed R&R. Eventually, something catches your eye. A young child buzzing around the establishment, cleaning tables and pushing in chairs at the behest of the elderly lady behind the bar.\r\n\r\nTwo of your crew start playing a Company favourite, <i>MERCENARIES!</i>, a tie-in to [[DM.BaseDescriptionDefs[LoreHolovidMercenaries],the popular Holovid show]].\r\n\r\nThe young boy stops in his tracks watching your crew deftly play through the game betraying their years of experience at the Argo's arcade.\r\n\r\n\"Wow! You guys really must be mercenaries! I bet you all have cool Callsigns too!\"",
+        "Icon" : "uixTxrSpot_Spectre"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 100,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+            "items" : [],
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "no_events_Calypso"
+            ],
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [
+                    "timeline_3045"
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [
+                    "timeline_3053",
+                    "event_mw_spex"
+                ],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "RequirementComparisons" : []
+        },
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "items" : [
+                    "planet_faction_steiner"
+                ],
+                "tagSetSourceFile" : "Tags/PlanetTags"
+            },
+            "ExclusionTags" : {
+                "items" : [
+                    "planet_pop_none"
+                ],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Indulge",
+                "Details" : "Indulge him in finding a Callsign",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Morale",
+                        "Details" : "Chuckling, you motion the young lad over to your table. You decide to indulge him, \"Yes, they do because you need a name that's short with not too many syllables.\"\r\n\r\nFollowing your lead, Darius chimes in, \"That way you don't waste time where seconds count. Can you think of a good one for yourself?\"\r\n\r\nBefore the young boy can answer, the elderly Bartender loudly retorts, \"You can call him Ghost because every time there's work, he disappears!\"\r\n\r\nLaughter erupts throughout the hall. \r\n\r\nPatting the kid on the back as he returns to work, \"If not Ghost, you could try Spectre?\"\r\n\r\n\"Oh, that certainly sounds much more intimidating, don't you think?\", Darius says with a grin.\r\n\r\nThe boy's face instantly brightens up.  \"Spectre? I like the sound of that! Yeah, call me <b>Spectre</b>!\"\r\n\r\nThe young <i>Spectre</i> runs back to his duties with glee. Usually, you would never endorse the Mercenary life on anyone, especially children, yet there's something about that kid reminds you of yourself when you were younger. \r\n\r\nDarius sits back and chirps, \"Well Commander, you've always had an eye for talent.\"\r\n\r\nRaising your beer to Darius, you make it a point to pack this memory away as one of the few wholesome ones you will ever have in your career. At least, it made you smile...if only for a while.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_spex"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Try to talk him out of it",
+                "Details" : "Dissuade him",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Dissuade",
+                        "Details" : "Rolling your eyes, you hollar, \"Hey kid, you don't want any of this. This is no life for young kid with his whole future ahead of him.\"\r\n\r\nThe young man scoffs, \"Future? You mean the little I make polishing tables and pushing chairs? The only thing that makes it all worthwhile are all the cool Mech pilots come in here. You can't be a mech pilot without a nom-de-guerre.\"\r\n\r\nDarius and you glace at each other in shock.\r\n\r\nYou reply, \"So you're into Callsigns, huh kid?\"\r\n\r\nThe old lady behind the bar speaks up, \"Yeah, I got one for him. Call him Magic Man. Every time there's work to do, he disappears!\"\r\n\r\nThe hall erupts in laughter.\r\n\r\nDarius chuckles, \"That's a terrible Callsign. Too many syllables will get you killed. Now, if you shorten it to Phantom...\"\r\n\r\nYou interject, \"That's not a bad Callsign. An even scarier ghost name is Spectre. What do you think, kid?\"\r\n\r\nThe boy's face instantly brightens up.  \"Spectre? I like the sound of that! Yeah, call me <b>Spectre</b>!\"\r\n\r\nThe young <i>Spectre</i> runs off to clean up the Galley with an indomitable grin. Meanwhile, Darius and you share a laugh realizing you just failed in talking the kid out of being a mercenary.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "event_co_spex"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

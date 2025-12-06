@@ -1,0 +1,27 @@
+{
+    "Name": "FeelGood",
+    "Enabled": true,
+
+    "Version": "1.9.1.1",
+    "PackagedOn": "2020-06-25T01:00:00Z",
+
+    "Author": "Attyx",
+    "Website": "https://github.com/Navbuoy/FeelGood",
+	
+    "DependsOn": ["BT_Extended", "BT_Extended_CE", "BT_Extended_3050", "Timeline"],
+    "ConflictsWith": [],
+
+    "Manifest": [
+
+	{ "Type": "ChassisDef", "Path": "ChassisDef", "AddToDB": true },
+	{ "Type": "BaseDescriptionsDef", "Path": "Descriptions", "AddToDB": true },	
+	{ "Type": "SimGameEventDef", "Path": "Events", "AddToDB": true },
+	{ "Type": "SimGameEventDef", "Path": "EventsEP", "AddToDB": true },
+	{ "Type": "MechDef", "Path": "MechDef", "AddToDB": true },
+	{ "Type": "ItemCollections", "Path": "ItemCollections", "AddToDB": true },
+	{ "Type": "PilotDef", "Path": "Pilots", "AddToDB": true },
+	{ "Type": "Sprite", "Path": "Sprites", "AddToDB": true },
+	{ "Type": "Sprite", "Path": "Portraits", "AddToDB": true }
+
+    ]
+}

@@ -2,7 +2,7 @@
     "Name": "FeelGood",
     "Enabled": true,
 
-    "Version": "1.9.1.1",
+    "Version": "0.2",
     "PackagedOn": "2020-06-25T01:00:00Z",
 
     "Author": "Attyx",
@@ -18,7 +18,7 @@
 	{ "Type": "SimGameEventDef", "Path": "Events", "AddToDB": true },
 	{ "Type": "SimGameEventDef", "Path": "EventsEP", "AddToDB": true },
 	{ "Type": "MechDef", "Path": "MechDef", "AddToDB": true },
-	{ "Type": "ItemCollections", "Path": "ItemCollections", "AddToDB": true },
+	{ "Type": "ItemCollectionDef", "Path": "ItemCollections", "AddToDB": true },
 	{ "Type": "PilotDef", "Path": "Pilots", "AddToDB": true },
 	{ "Type": "Sprite", "Path": "Sprites", "AddToDB": true },
 	{ "Type": "Sprite", "Path": "Portraits", "AddToDB": true }

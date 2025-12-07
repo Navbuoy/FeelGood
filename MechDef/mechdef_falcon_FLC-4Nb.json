@@ -21,8 +21,8 @@
         "Purchasable": false,
         "Manufacturer": null,
         "Model": null,
-        "UIName": "Falcon FLC-4N",
-        "Id": "mechdef_falcon_FLC-4N",
+        "UIName": "Falcon FLC-4Nb",
+        "Id": "mechdef_falcon_FLC-4Nb",
         "Name": "Falcon",
         "Details": "Built for the Royal SLDF Divisions at the captured Roe Weapon Systems plant on Apollo during the Amaris Civil War, the so-called Royal Falcon carried an experimental Snub-nose PPC backed up by two medium lasers. It was also equipped with double heat sinks, and was built on a Duralyte 300 endo steel chassis. All known examples and design specs were taken with the Exodus Fleet.",
         "Icon": "uixTxrIcon_falcon"
@@ -127,17 +127,6 @@
             "hasPrefabName": false
         },
         {
-            "MountedLocation": "LeftArm",
-            "ComponentDefID": "Gear_HeatSink_Generic_Double",
-            "SimGameUID": null,
-            "ComponentDefType": "HeatSink",
-            "HardpointSlot": -1,
-            "GUID": null,
-            "DamageLevel": "Functional",
-            "prefabName": null,
-            "hasPrefabName": false
-        },		
-        {
             "MountedLocation": "LeftTorso",
             "ComponentDefID": "Gear_JumpJet_Generic_Standard",
             "SimGameUID": null,
@@ -225,27 +214,6 @@
             "prefabName": null,
             "hasPrefabName": false
         },
-        {
-            "MountedLocation": "RightArm",
-            "ComponentDefID": "Gear_HeatSink_Generic_Double",
-            "SimGameUID": null,
-            "ComponentDefType": "HeatSink",
-            "HardpointSlot": -1,
-            "GUID": null,
-            "DamageLevel": "Functional",
-            "prefabName": null,
-            "hasPrefabName": false
-        },        {
-            "MountedLocation": "RightArm",
-            "ComponentDefID": "Gear_HeatSink_Generic_Double",
-            "SimGameUID": null,
-            "ComponentDefType": "HeatSink",
-            "HardpointSlot": -1,
-            "GUID": null,
-            "DamageLevel": "Functional",
-            "prefabName": null,
-            "hasPrefabName": false
-        },		
         {
             "MountedLocation": "RightArm",
             "ComponentDefID": "Weapon_PPC_PPCSnub_0-STOCK",

@@ -40,7 +40,7 @@
             "ExclusionTags" : {
                 "tagSetSourceFile" : "Tags/CompanyTags",
                 "items" : [
-                    "event_mw_SRM2"
+                    "event_mw_moonlighting"
                 ]
             },
             "RequirementComparisons" : [
@@ -177,7 +177,7 @@
                             "AddedTags" : {
                                 "tagSetSourceFile" : "Tags/CompanyTags",
                                 "items" : [
-                                    "event_mw_SRM2"
+                                    "event_mw_moonlighting"
                                 ]
                             },
                             "RemovedTags" : {
@@ -271,7 +271,7 @@
                             "AddedTags" : {
                                 "tagSetSourceFile" : "Tags/CompanyTags",
                                 "items" : [
-                                    "event_mw_SRM2"
+                                    "event_mw_moonlighting"
                                 ]
                             },
                             "RemovedTags" : {
@@ -371,7 +371,7 @@
                             "AddedTags" : {
                                 "tagSetSourceFile" : "Tags/CompanyTags",
                                 "items" : [
-                                    "event_mw_SRM2"
+                                    "event_mw_moonlighting"
                                 ]
                             },
                             "RemovedTags" : {
@@ -401,7 +401,7 @@
                             "AddedTags" : {
                                 "tagSetSourceFile" : "Tags/CompanyTags",
                                 "items" : [
-                                    "event_mw_SRM2"
+                                    "event_mw_moonlighting"
                                 ]
                             },
                             "RemovedTags" : {
@@ -508,7 +508,7 @@
                             "AddedTags" : {
                                 "tagSetSourceFile" : "Tags/CompanyTags",
                                 "items" : [
-                                    "event_mw_SRM2"
+                                    "event_mw_moonlighting"
                                 ]
                             },
                             "RemovedTags" : {
@@ -577,7 +577,7 @@
                             "AddedTags" : {
                                 "tagSetSourceFile" : "Tags/CompanyTags",
                                 "items" : [
-                                    "event_mw_SRM2"
+                                    "event_mw_moonlighting"
                                 ]
                             },
                             "RemovedTags" : {
@@ -639,7 +639,7 @@
                             "AddedTags" : {
                                 "tagSetSourceFile" : "Tags/CompanyTags",
                                 "items" : [
-                                    "event_mw_SRM2"
+                                    "event_mw_moonlighting"
                                 ]
                             },
                             "RemovedTags" : {
@@ -863,7 +863,7 @@
                             "AddedTags" : {
                                 "tagSetSourceFile" : "Tags/CompanyTags",
                                 "items" : [
-                                    "event_mw_SRM2"
+                                    "event_mw_moonlighting"
                                 ]
                             },
                             "RemovedTags" : {

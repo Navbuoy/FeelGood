@@ -23,7 +23,7 @@
             {
                 "obj" : "ExperienceSpent",
                 "op" : "GreaterThan",
-                "val" : 5000,
+                "val" : 23000,
                 "valueConstant" : "5000"
             }
         ]
@@ -59,7 +59,7 @@
                     "Description" : {
                         "Id" : "outcome_0_0",
                         "Name" : "Cut the cord",
-                        "Details" : "\"Calista, you never cease to amaze me with your efforts on the field. Time and again, you have proven youself with both your poise and situational awareness in the field.\"\r\n\r\nStepping closer to her, you gently grab her wrist as her eyes widen.\r\n\r\nYou state confidently, \"I am hereby awarding you...uh, this here snipping of the Military Skill cord.\" \r\n\r\nYou pull out your swiss army knife and use its scissors to cut one of the three cords on her Bondcord, \r\n\r\nGemini tries her best to hide a warm smile. Collecting herself she straightens up and states proudly, \"Thank-You Commander!\"\r\n\r\n\"Dismissed.\", you reply. \r\n\r\nAs you both go about your business, you chuckle as these Clan customs sure will take some getting used to. Looking over your shoulder as she leaves, you realize she's worth it.",
+                        "Details" : "\"Calista, you never cease to amaze me with your efforts on the field. Time and again, you have proven youself with both your poise and situational awareness in the field.\"\r\n\r\nStepping closer to her, you gently grab her wrist as her eyes widen.\r\n\r\nYou state confidently, \"I am hereby awarding you...uh, this here snipping of the Military Skill cord.\" \r\n\r\nYou pull out your swiss army knife and use its scissors to cut one of the three cords on her Bondcord, \r\n\r\nGemini tries her best to hide a warm smile. Collecting herself, she straightens up and states proudly, \"Thank-You Commander!\"\r\n\r\n\"Dismissed.\", you reply. \r\n\r\nAs you both go about your business, you chuckle as these Clan customs sure will take some getting used to. Looking over your shoulder as she leaves, you realize she's worth it.",
                         "Icon" : null
                     },
                     "Weight" : 100,

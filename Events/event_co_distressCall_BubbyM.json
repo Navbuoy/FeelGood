@@ -1,0 +1,166 @@
+{
+    "Description" : {
+        "Id" : "event_co_distressCall_BubbyM",
+        "Name" : "Odd Distress Call",
+        "Details" : "Sumire catches your attention on the bridge. \"Commander, I've picked up a distress call coming from a small makeshift relay, approximately two kilometres outside a nearby pirate base. Seems sketchy though.\"\r\n\r\nMurad interjects, \"Yes, it does, yet the message itself was encoded in Hexadecimal using a very old computer speak from centuries ago. See for yourself...\"\r\n\r\nYou look at the screen and can barely make out the gibberish with the odd legible word here and there.\r\n\r\n<b>5 0 5\r\n\r\n1 907 2 9E7 A 11F7 FA57\r\n\r\n1 907 250000 CB1115 4 A55157\r\n\r\n1 907 A B16 BAD B07 4 A55157 2\r\n\r\n175 A 900D DEA1 4 A11\r\n\r\n5 0 5</b>\r\n\r\n\"The coordinates lead to an abandoned mine shaft exit at the other side of the ridgeline. I doubt any random pirate would set up such an elaborate trap.\"\r\n\r\n\"If I'm reading this right, the reward is 250 000 CBills and a mech for an extraction?\", you wonder.\r\n\r\nSumire shrugs, \"Actually, the ridgeline is high enough for me to make an approach without tripping up any sensors so it's not that bad a pickup spot, all things considered.\"\r\n\r\n\"Well, it's up to you Commander.\", Dr. Murad prompts",
+        "Icon" : "uixTxrSpot_DCBubs"
+    },
+    "Scope" : "Company",
+    "Weight" : 1000,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "tagSetSourceFile" : "",
+            "items" : [
+                "timeline_3030"
+            ]
+        },
+        "ExclusionTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+                "event_DCBub"			
+			]
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : [
+                    "planet_civ_periphery"
+                ]
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Stay out of it.",
+                "Details" : "Non-participation Option",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Nothing happens",
+                        "Details" : "You decide to disregard the message as it's not worth the risk. In your eyes, nothing is ever as easy as it seems and if it's too good to be true, it most likely is.\r\n\r\nHours later Sumire approaches you with a report, \"Commander, as we passed the moon, we had a clear Line of Sight on the coordinates. It appears there was someone waiting nearby?\"\r\n\r\n\"Oh well, hope the little guy makes it.\", you chuckle as you try to shrug it off,",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : []
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Approach cautiously.",
+                "Details" : "Safe option",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Rescue",
+                        "Details" : "Sumire's scans have detected an incoming tight beam communication on low band. Looks like our mysterious client is trying to contact us directly. \r\n\r\nSumire states, \"I was forced to drop the Argo into Low Orbit in order to get a clear signal. By doing that, I'm pretty sure we've alerted the Pirates to our presence, Commander.\"\r\n\r\n\"So much for the element of surprise.\", you grin,  \"Let's see what our prospective client has to say.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : [
+                                    "event_DCBub"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "System_AddContract",
+                                    "value" : "Rescue_Pirate_Jailbreak_Bubby",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "Unknown",
+                                        "SelfEmployed"
+                                    ]
+                                },
+                                {
+                                    "Type" : "System_StartConversation",
+                                    "value" : "9cd5c6ab222205759e71581f",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "Mystery Jailbreak",
+                                        "Low Orbit \u2014 Pirate Base",
+                                        null,
+                                        null
+                                    ]
+                                },
+                                {
+                                    "Type" : "System_ShowRewards",
+                                    "value" : "itemCollection_loot_event_DCBubs",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "tagSetSourceFile" : "tags/EventTags",
+        "items" : []
+    }
+}

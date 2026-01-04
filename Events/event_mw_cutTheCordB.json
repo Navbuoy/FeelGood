@@ -23,7 +23,7 @@
             {
                 "obj" : "ExperienceSpent",
                 "op" : "GreaterThan",
-                "val" : 15000,
+                "val" : 33000,
                 "valueConstant" : "15000"
             }
         ]
@@ -61,7 +61,7 @@
                     "Description" : {
                         "Id" : "outcome_0_0",
                         "Name" : "Cut the cord",
-                        "Details" : "Stepping closer, you gently grab her wrist and [[DM.BaseDescriptionDefs[LoreGemini],Gemini]], begins to beam with pride.\r\n\r\nYou state confidently, \"As your Bondholder, I deem that you have adequately displayed the virtue of Loyalty beyond a shadow of a doubt. I award you this snipping of the Loyalty cord.\" \r\n\r\nYou pull out your swiss army knife and use its scissors to cut one of the two remaining cords on her Bondcord as Darius applauds.\r\n\r\nGemini's face is alight. Standing proud and tall she states proudly, \"Thank-You Commander! I will not let you down!\"\r\n\r\n\"Dismissed.\", you reply. \r\n\r\nYou hear gasps in the hallway outside as Gemini shows her wrist to her crewmates. Small cheers are heard down the corridors.\r\n\r\nBoth you and Darius break out in simultaneous laughter. \r\n\r\n\"You were right Commander, that is the weirdest promotion I have ever seen!\"",
+                        "Details" : "Stepping closer, you gently grab her wrist and [[DM.BaseDescriptionDefs[LoreGemini],Gemini]] is already beaming with pride.\r\n\r\nYou state confidently, \"As your Bondholder, I deem that you have adequately displayed the virtue of Loyalty beyond a shadow of a doubt. I award you this snipping of the Loyalty cord.\" \r\n\r\nYou pull out your swiss army knife and use its scissors to cut one of the two remaining cords on her Bondcord as Darius applauds.\r\n\r\nGemini's face is alight. Standing proud and tall she states proudly, \"Thank-You Commander! I will not let you down!\"\r\n\r\n\"Dismissed.\", you reply. \r\n\r\nYou hear gasps in the hallway outside as Gemini shows her wrist to her crewmates. Small cheers are heard down the corridors.\r\n\r\nBoth you and Darius break out in simultaneous laughter. \r\n\r\n\"You were right Commander, that is the weirdest promotion I have ever seen!\"",
                         "Icon" : null
                     },
                     "Weight" : 100,

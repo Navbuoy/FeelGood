@@ -1,0 +1,227 @@
+{
+    "Description" : {
+        "Id" : "event_mw_unstable",
+        "Name" : "Getting Help",
+        "Details" : "As you stroll down the corridors near the Barracks, you hear raised voices echo.\r\n\r\n\"Don't touch them! Trust me, you don't want to trigger them!\", a shrill voice insists.\r\n\r\nAs you enter the Barracks, you spot [[SCN_MW,{SCN_MW.Callsign}]] standing over [[TGT_MW,{TGT_MW.Callsign}]] lying on their side with their face against the wall.\r\n\r\n{SCN_MW.Callsign} turns to you exasperated, \"I don't know what to do. They refuse to get out of bed!\"",
+        "Icon" : "uixTxrSpot_Unstable"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 10,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+            "items" : [
+                "pilot_unstable"
+            ],
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "no_events_Calypso"
+            ],
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : "Tags/CompanyTags"
+            },
+            "RequirementComparisons" : []
+        },
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : "Tags/PlanetTags"
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Try talk to {TGT_MW.Callsign}",
+                "Details" : "Try to coax them out of bed.",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Talk them out of bed",
+                        "Details" : "Putting on your most authoritative tone, \"O.K. on your feet soldier.\"\r\n\r\n{TGT_MW.Callsign} slowly turns to make eye contact with you and acknowledges your directive by slowly getting out of his bunk. Their eyes are sunk deep in their sockets and whatever vigour they had left is all but gone. \r\n\r\nWithout an ounce of hesitation you continue, \"Enough is enough. Get cleaned up, we're heading straight to the Medbay, You aren't leaving until you get the help you need.\"\r\n\r\nThe mechwarrior struggles to protest only for you to cut them off, \"This is not a negotiation. This is a direct order! Now hop to it!\"\r\n\r\nThe Doctor diagnoses {TGT_MW.Callsign}'s condition within minutes as they were already aware of their previous episodes. Hours later, you receive an update that {TGT_MW.Callsign} is now set up on a strict regimen to address their chemical imbalance. \r\n\r\nYou turn your attention to {TGT_MW.Callsign} sitting in a chair as the doctor concludes their summary. \r\n\r\n\"Commander, I just wanted to -\"\r\n\r\nYou raise you hand to interrupt them once more, \"Save it. Just focus on getting your head on straight. Can you do that for me?\"\r\n\r\n{TGT_MW.Callsign} brightens, \"Yes, Commander.\"\r\n\r\n\"Good, the next time I see you not wanting to leave something, it better be inside the cockpit of your mech.\" \r\n\r\nYou slap {TGT_MW.Callsign} on the back and make your way. You know it's going to be a long road but as long as you have enough support around, your mechwarrior will have a fighting chance to maintain being an asset on your roster rather than a liability.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [
+                                    "pilot_unstable"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Call the Doctor",
+                "Details" : "Get the help they need",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Doctor",
+                        "Details" : "You motion to {SCN_MW.Callsign} to get the Doctor from Medbay as you keep watch over {TGT_MW.Callsign} to ensure that nothing incites an episode.\r\n\r\nThe Doctor struggles to reason with the mechwarrior but it's no use. Inevitably it boils down to you and {SCN_MW.Callsign} having to restrain {TGT_MW.Callsign} from lashing out as the Doctor sedates them.\r\n\r\nHours later, you finally see {TGT_MW.Callsign} lying in a bed. They have a hazy look in their eye. Years of torment and enguish strewn across their face. After being briefed by the Doctor on the outlook. It is going to be long road but with the support system in place, your mechwarrior has a fighting chance to pull through. \r\n\r\nWalking over to {TGT_MW.Callsign}'s bed, you look down with a comforting grin, \"How you feeling?\"\r\n\r\n\"Better Commander, it might take a few week the Doc said for the meds to really kick in. Just wanted to say I'm sorry and - \", {TGT_MW.Callsign} beings to choke with their face flush with embarrassment.\r\n\r\nYou sternly interject, \"Need say no more. Just put in the work and take one day at a time. We need you out there on the field. But only when you're 100%!\"\r\n\r\n{TGT_MW.Callsign} nods with a grim determination to not waste the opportunity they were given. All things considered, that will have to be enough for now. Only time will tell.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [
+                                    "pilot_unstable"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Fire {TGT_MW.Callsign}",
+                "Details" : "Fire them",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "Fired",
+                        "Details" : "\"This the last straw pilot!\", you shout at the top of your lungs.\r\n\r\n{TGT_MW.Callsign} turns frantically to face you hoping to be able to make some form of protest but you are resolute in your glare.\r\n\r\n\"Darius get them off my ship before I change my mind and throw them out the airlock!\"\r\n\r\nThe shock turns to resignation as {TGT_MW.Callsign} quickly complies and clears their bunk before another word can be uttered.\r\n\r\nDarius quietly walks {TGT_MW.Callsign} out of the Barracks. You personally watch them disembark at the next planet.\r\n\r\nYou realize that it's harsh but sometimes you have to cut your losses. Hopefully, this might serve as a wake-up call for them to make a change and get the help they need. In the meantime, you have a business to run and don't have time to hold anyone's hand.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Fire",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "Description" : {
+        "Id" : "fp_bubbyRescue",
+        "Name" : "Mystery Jailbreak",
+        "Details" : "Rescue a mysterious person held captive at a lunar Pirate base",
+        "Icon" : null
+    },
+    "Weight" : 10,
+    "InternalName" : "bubbyRescue",
+    "PublishState" : "UNPUBLISHED",
+    "Difficulty" : 10,
+    "Requirements" : [],
+    "LocationRequirements" : null,
+    "PotentialEmployers" : [
+        "Unknown"
+    ],
+    "TargetFaction" : "INVALID_UNSET",
+    "AllowRefitTime" : true,
+    "FlashpointLength" : "SHORT",
+    "Repeatable" : false,
+    "MilestoneSetID" : "ms_fp_bubbyRescue",
+    "UseAvailableTimeoutOverride" : false,
+    "AvailableTimeout" : 2000,
+    "UseInProgressTimeoutOverride" : false,
+    "InProgressTimeout" : 180,
+    "RewardCollectionID" : null,
+    "UnitDropTonnageHint" : "None",
+    "LanceDropTonnageHint" : "None",
+    "FlashpointShortDescription" : "The message appears to be legitimate so this should be a cake walk.",
+    "FlashpointDescriberCastDefId" : "castDef_DariusDefault",
+    "Tags" : {
+        "tagSetSourceFile" : "tags/FlashpointTags",
+        "items" : []
+    }
+}

@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "event_mw_cutTheCordC",
         "Name" : "Integrity Cutting",
-        "Details" : "Responding to your hails, [[DM.BaseDescriptionDefs[LoreGemini],Gemini]], arrives on the Bridge, \"I got here as fast as I could  Commander?\"\r\n\r\nThis time you are accompanied by your entire senior staff at your side. You wear a huge grin when you proudly exclaim, \"Finally!\"",
+        "Details" : "Responding to your hails, [[DM.BaseDescriptionDefs[LoreGemini],Gemini]], arrives on the Bridge, \"I got here as fast as I could Commander?\"\r\n\r\nThis time you are accompanied by your entire senior staff at your side. You wear a huge grin when you proudly exclaim, \"Finally!\"",
         "Icon" : "uixTxrSpot_Cord"
     },
     "Scope" : "MechWarrior",
@@ -23,7 +23,7 @@
             {
                 "obj" : "ExperienceSpent",
                 "op" : "GreaterThan",
-                "val" : 30000,
+                "val" : 48000,
                 "valueConstant" : "30000"
             }
         ]
@@ -61,7 +61,7 @@
                     "Description" : {
                         "Id" : "outcome_0_0",
                         "Name" : "Cut the cord",
-                        "Details" : "Stepping closer, you gently grab her wrist and [[DM.BaseDescriptionDefs[LoreGemini],Gemini]], is visibly holding back tears.\r\n\r\nYou state confidently, \"As your Bondholder, I deem that you have adequately displayed the virtue of Integrity beyond contestation. I award you this snipping of the Loyalty cord thus completing your vow of Bondsmanship.\" \r\n\r\nYou pull out your swiss army knife and use its scissors to cut the last remaining cord on her wrist.\r\n\r\nThe entire senior staff applauds as well as the remaining ground and service crew pouring in to congratulate her.\r\n\r\nGemini's face is engulfed in tears. Struggling to clear her face, she says, \"Thank-You so much Commander! I promise to do you all proud! I owe everyone so much.\"\r\n\r\n\"You better believe it, Lieutenant.\", you reply. \r\n\r\nIn shock, she starts to shake your hand only to give you one of the biggest bear hugs you have ever experienced. You gladly state, \"Dismissed.\" Struggling to catch your breath you watch Gemini rush over to Yang and give him an even bigger hug followed by a tender kiss.\r\n\r\nWith a raised eyebrow Darius oberves, \"Looks like she isn't going anywhere, Commander.\"\r\n\r\nYou just smile and nod, knowing full well that she would eventually 'go native' once she hung around your charismatic crew of savages long enough.\r\n\r\nYang sheepishly turns to you while still in her arms whispering, \"Hey, she loves my scars.\"",
+                        "Details" : "Stepping closer, you gently grab her wrist and [[DM.BaseDescriptionDefs[LoreGemini],Gemini]] is visibly holding back tears.\r\n\r\nYou state confidently, \"As your Bondholder, I deem that you have adequately displayed the virtue of Integrity beyond contestation. I award you this snipping of the Loyalty cord thus completing your vow of Bondsmanship.\" \r\n\r\nYou pull out your swiss army knife and use its scissors to cut the last remaining cord on her wrist.\r\n\r\nThe entire senior staff applauds as well as the remaining ground and service crew pour in to congratulate her.\r\n\r\nGemini's face is engulfed in tears. Struggling to clear her face, she says, \"Thank-You so much Commander! I promise to do you all proud! I owe everyone so much.\"\r\n\r\n\"You better believe it, Lieutenant.\", you reply. \r\n\r\nIn shock, she starts to shake your hand only to end up giving you one of the biggest bear hugs you have ever experienced. You gladly state, \"Dismissed.\" Struggling to catch your breath, you watch Gemini rush over to Yang and give him an even bigger hug followed by a tender kiss.\r\n\r\nWith a raised eyebrow Darius oberves, \"Looks like she isn't going anywhere, Commander.\"\r\n\r\nYou just smile and nod, knowing full well that she would eventually 'go native' once she hung around your charismatic crew of <i>savages</i> long enough.\r\n\r\nYang sheepishly turns to you while still in her arms whispering, \"What can I say, she loves my scars.\"",
                         "Icon" : null
                     },
                     "Weight" : 100,

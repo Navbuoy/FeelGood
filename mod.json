@@ -13,15 +13,22 @@
 
     "Manifest": [
 
+    { "Type": "CastDef", "Path": "CastDef" },
 	{ "Type": "ChassisDef", "Path": "ChassisDef", "AddToDB": true },
-	{ "Type": "BaseDescriptionsDef", "Path": "Descriptions", "AddToDB": true },	
+	{ "Type": "BaseDescriptionsDef", "Path": "Descriptions", "AddToDB": true },
+    { "Type": "ContractOverride", "Path": "Contracts" },
+    { "Type": "FlashpointDef", "Path": "Flashpoints" },	
 	{ "Type": "SimGameEventDef", "Path": "Events", "AddToDB": true },
 	{ "Type": "SimGameEventDef", "Path": "EventsEP", "AddToDB": true },
 	{ "Type": "MechDef", "Path": "MechDef", "AddToDB": true },
+    { "Type": "SimGameMilestoneSet", "Path": "MilestoneSets" },
+    { "Type": "SimGameConversations", "Path": "SimGameConversations" },
 	{ "Type": "ItemCollectionDef", "Path": "ItemCollections", "AddToDB": true },
 	{ "Type": "PilotDef", "Path": "Pilots", "AddToDB": true },
 	{ "Type": "Sprite", "Path": "Sprites", "AddToDB": true },
-	{ "Type": "Sprite", "Path": "Portraits", "AddToDB": true }
+	{ "Type": "Sprite", "Path": "Portraits", "AddToDB": true },
+    { "Type": "Texture2D", "Path": "Textures", "AddToAddendum": "ConversationTexture" },	
+    { "Type": "WeaponDef", "Path": "WeaponDef", "AddToDB": true }	
 
     ]
 }

@@ -10,31 +10,38 @@
     "Requirements" : {
         "Scope" : "Company",
         "RequirementTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
             "items" : [
                 "timeline_3049_12_01"
-            ],
-            "tagSetSourceFile" : "Tags/CompanyTags"
+            ]
         },
         "ExclusionTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
             "items" : [
                 "event_co_forkInTheRoad"
-            ],
-            "tagSetSourceFile" : "Tags/CompanyTags"
+            ]
         },
-        "RequirementComparisons" : []
+        "RequirementComparisons" : [
+            {
+                "obj" : "Travel",
+                "op" : "Equal",
+                "val" : 0,
+                "valueConstant" : "0"
+            }
+        ]
     },
     "AdditionalRequirements" : [
         {
             "Scope" : "StarSystem",
             "RequirementTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
                 "items" : [
                     "planet_name_Antares"
-                ],
-                "tagSetSourceFile" : "Tags/PlanetTags"
+                ]
             },
             "ExclusionTags" : {
-                "items" : [],
-                "tagSetSourceFile" : "Tags/PlanetTags"
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : []
             },
             "RequirementComparisons" : []
         }
@@ -63,14 +70,14 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
+                                "tagSetSourceFile" : "",
                                 "items" : [
                                     "event_co_forkInTheRoad"
-                                ],
-                                "tagSetSourceFile" : ""
+                                ]
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -99,12 +106,12 @@
             "Requirements" : {
                 "Scope" : "Company",
                 "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "RequirementComparisons" : []
             }
@@ -131,14 +138,14 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/PilotTags",
                                 "items" : [
                                     "event_co_forkInTheRoad"
-                                ],
-                                "tagSetSourceFile" : "Tags/PilotTags"
+                                ]
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -167,12 +174,12 @@
             "Requirements" : {
                 "Scope" : "Company",
                 "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "RequirementComparisons" : []
             }
@@ -199,12 +206,12 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : "Tags/CompanyTags"
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : []
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -233,12 +240,12 @@
             "Requirements" : {
                 "Scope" : "Company",
                 "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "RequirementComparisons" : []
             }
@@ -249,7 +256,7 @@
     "EventType" : "NORMAL",
     "OneTimeEvent" : false,
     "Tags" : {
-        "items" : [],
-        "tagSetSourceFile" : "tags/EventTags"
+        "tagSetSourceFile" : "tags/EventTags",
+        "items" : []
     }
 }

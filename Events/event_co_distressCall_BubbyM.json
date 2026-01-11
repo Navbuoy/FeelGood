@@ -18,10 +18,17 @@
         "ExclusionTags" : {
             "tagSetSourceFile" : "Tags/CompanyTags",
             "items" : [
-                "event_DCBub"			
-			]
+                "event_DCBub"
+            ]
         },
-        "RequirementComparisons" : []
+        "RequirementComparisons" : [
+            {
+                "obj" : "Travel",
+                "op" : "Equal",
+                "val" : 0,
+                "valueConstant" : "0"
+            }
+        ]
     },
     "AdditionalRequirements" : [
         {

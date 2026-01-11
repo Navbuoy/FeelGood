@@ -10,14 +10,14 @@
     "Requirements" : {
         "Scope" : "MechWarrior",
         "RequirementTags" : {
-            "items" : [],
-            "tagSetSourceFile" : "Tags/PilotTags"
+            "tagSetSourceFile" : "Tags/PilotTags",
+            "items" : []
         },
         "ExclusionTags" : {
+            "tagSetSourceFile" : "Tags/PilotTags",
             "items" : [
                 "no_events_Calypso"
-            ],
-            "tagSetSourceFile" : "Tags/PilotTags"
+            ]
         },
         "RequirementComparisons" : []
     },
@@ -25,33 +25,40 @@
         {
             "Scope" : "Company",
             "RequirementTags" : {
+                "tagSetSourceFile" : "",
                 "items" : [
                     "timeline_3045"
-                ],
-                "tagSetSourceFile" : ""
+                ]
             },
             "ExclusionTags" : {
+                "tagSetSourceFile" : "Tags/CompanyTags",
                 "items" : [
                     "timeline_3053",
                     "event_mw_spex"
-                ],
-                "tagSetSourceFile" : "Tags/CompanyTags"
+                ]
             },
-            "RequirementComparisons" : []
+            "RequirementComparisons" : [
+                {
+                    "obj" : "Travel",
+                    "op" : "Equal",
+                    "val" : 0,
+                    "valueConstant" : "0"
+                }
+            ]
         },
         {
             "Scope" : "StarSystem",
             "RequirementTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
                 "items" : [
                     "planet_faction_steiner"
-                ],
-                "tagSetSourceFile" : "Tags/PlanetTags"
+                ]
             },
             "ExclusionTags" : {
+                "tagSetSourceFile" : "",
                 "items" : [
                     "planet_pop_none"
-                ],
-                "tagSetSourceFile" : ""
+                ]
             },
             "RequirementComparisons" : []
         }
@@ -80,14 +87,14 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
+                                "tagSetSourceFile" : "",
                                 "items" : [
                                     "event_co_spex"
-                                ],
-                                "tagSetSourceFile" : ""
+                                ]
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -109,12 +116,12 @@
             "Requirements" : {
                 "Scope" : "Company",
                 "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "RequirementComparisons" : []
             }
@@ -141,14 +148,14 @@
                             "Scope" : "Company",
                             "Requirements" : null,
                             "AddedTags" : {
+                                "tagSetSourceFile" : "",
                                 "items" : [
                                     "event_co_spex"
-                                ],
-                                "tagSetSourceFile" : ""
+                                ]
                             },
                             "RemovedTags" : {
-                                "items" : [],
-                                "tagSetSourceFile" : ""
+                                "tagSetSourceFile" : "",
+                                "items" : []
                             },
                             "Stats" : [
                                 {
@@ -170,12 +177,12 @@
             "Requirements" : {
                 "Scope" : "Company",
                 "RequirementTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "ExclusionTags" : {
-                    "items" : [],
-                    "tagSetSourceFile" : ""
+                    "tagSetSourceFile" : "",
+                    "items" : []
                 },
                 "RequirementComparisons" : []
             }
@@ -186,7 +193,7 @@
     "EventType" : "NORMAL",
     "OneTimeEvent" : false,
     "Tags" : {
-        "items" : [],
-        "tagSetSourceFile" : "tags/EventTags"
+        "tagSetSourceFile" : "tags/EventTags",
+        "items" : []
     }
 }

@@ -1,0 +1,258 @@
+{
+    "Description" : {
+        "Id" : "event_co_closeEncounter",
+        "Name" : "Close Encounter",
+        "Details" : "You rush to the bridge upon receiving Sumire's hails. At first glance, you immediately notice everyone looking outside the Argo's port side windows.\r\n\r\nSumire responds without taking her eyes off the spectacle before her, \"You'll want to see this Commander?\"\r\n\r\nEven though it is a healthy distance away, you can make out the pair of ships in a fierce firefight. One is clearly a pirate vessel attacking a similarly sized cargoship. \r\n\r\n\"I never thought I'd live to see a Buccaneer holdin' its own, Commander.\" Yang grins, \"She's givin' as good as she's gettin'. I can barely make it out but I think she's sporting a pair of Gauss rifles!\"\r\n\r\nDr. Murad laments, \"Isn't someone going to do something? They're being attacked by pirates!\"\r\n\r\n\"I could scramble the Leopard?\", Sumire chimes in.\r\n\r\nDarius just turns to you with a shrug, \"Well, it's up to you Commander?\"",
+        "Icon" : "uixTxrSpot_GusBucc"
+    },
+    "Scope" : "Company",
+    "Weight" : 1000,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : []
+        },
+        "ExclusionTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+                "AidBucc",
+                "IgBucc"
+            ]
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "Tags/PilotTags",
+                "items" : []
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        },
+        {
+            "Scope" : "Commander",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "",
+                "items" : []
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        },
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : [
+                    "planet_pop_none"
+                ]
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Mind your own business",
+                "Details" : "Don't get involved and move along",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Mind your business",
+                        "Details" : "Turning away from the firefight, you shake your head declining the temptation to get involved.\r\n\r\n\"No point sticking our necks out and putting our own people at risk...especially for free.\"\r\n\r\nMurad protests, \"You're just going to leave them to the mercy of those pirates?\"\r\n\r\nYou look at her dead in the eyes with a steely glance, \"How many people came to our rescue the countless times Pirates were harassing us? It's not our fight, but if it makes you feel any better, with dual Gauss Rifles they are better armed than us.\"\r\n\r\nThe staff nods as everyone quietly goes about their business as nothing ever happened.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "IgBucc"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Assist the Buccaneer",
+                "Details" : "Sumire scambles the Leopard and provides aid.",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Cavalry",
+                        "Details" : "Scrambling the Leopard, Sumire deftly shoots several shots across the bow of the heavily damaged Pirate ship. The bandits decide to make a hasty retreat but not without snarling a series of empty threats as they flee. The captain of the equally battered Buccaneer hesitantly agrees to your offer of aid. Soon Sumire is ferrying a small group of MechTechs, including Yang, to assist with the repairs. Hours later, Sumire returns to the Argo with an overjoyed Yang storming out of the Leopard, arms outstretched, eagerly presenting the bountiful 'reward' on display. All compliments of one very thankful Buccaneer captain. \r\n\r\nYang excitedly blurts, \"Gus even said that if we ever cross paths again, he might have even better stuff at ridiculously low prices for his new favourite customers!\"\r\n\r\nDarius smiles, \"Ridiculously low prices? I like the sound of that!\"\r\n\r\nSumire disembarking chimes in, \"Commander, Gus insists that you hail him before we leave.\"\r\n\r\nYou promptly head back to the bridge to talk to your newfound benefactor.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "AidBucc"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Item.WeaponDef.Weapon_Laser_MediumLaserER_0-STOCK",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Item.UpgradeDef.Gear_Gyro_Friedhof_Sparrow",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Item.HeatSinkDef.Gear_HeatSink_Generic_Standard-Bank",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Item.HeatSinkDef.Gear_HeatSink_Generic_Thermal-Exchanger-I",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Item.HeatSinkDef.Gear_HeatSink_Generic_Double",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Item.WeaponDef.Weapon_Laser_MediumLaser_0-STOCK",
+                                    "value" : "6",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Item.WeaponDef.Weapon_Laser_LargeLaser_0-STOCK",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Item.WeaponDef.Weapon_Laser_SmallLaserER_0-STOCK",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "System_StartConversation",
+                                    "value" : "9c0046202f180566242bcc8a",
+                                    "valueConstant" : null,
+                                    "additionalValues" : [
+                                        "No Fuss, It's Gus",
+                                        "Somewhere in a secluded part of the system...",
+                                        null,
+                                        null
+                                    ]
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "tagSetSourceFile" : "tags/EventTags",
+        "items" : []
+    }
+}

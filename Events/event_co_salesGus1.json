@@ -98,7 +98,7 @@
                     "Description" : {
                         "Id" : "outcome_0_0",
                         "Name" : "Bay One A",
-                        "Details" : "You choose the Energy and Support weapons. \r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the crate.",
+                        "Details" : "You choose the Energy and Support weapons. \r\n\r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the crate.",
                         "Icon" : null
                     },
                     "Weight" : 50,
@@ -162,7 +162,7 @@
                     "Description" : {
                         "Id" : "outcome_0_1",
                         "Name" : "Bay One B",
-                        "Details" : "You choose the Energy and Support weapons. \r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the crate.",
+                        "Details" : "You choose the Energy and Support weapons. \r\n\r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the crate.",
                         "Icon" : null
                     },
                     "Weight" : 25,
@@ -226,7 +226,7 @@
                     "Description" : {
                         "Id" : "outcome_0_2",
                         "Name" : "Bay One C",
-                        "Details" : "You choose the Energy and Support weapons. \r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the crate.",
+                        "Details" : "You choose the Energy and Support weapons. \r\n\r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the crate.",
                         "Icon" : null
                     },
                     "Weight" : 25,
@@ -333,7 +333,7 @@
                     "Description" : {
                         "Id" : "outcome_1_0",
                         "Name" : "Bay Two A",
-                        "Details" : "You choose the Missiles and Ballistics weapons. \r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the crate.",
+                        "Details" : "You choose the Missiles and Ballistics weapons. \r\n\r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the crate.",
                         "Icon" : null
                     },
                     "Weight" : 50,
@@ -397,7 +397,7 @@
                     "Description" : {
                         "Id" : "outcome_1_1",
                         "Name" : "Bay Two B",
-                        "Details" : "You choose the Missiles and Ballistics weapons. \r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the crate.",
+                        "Details" : "You choose the Missiles and Ballistics weapons. \r\n\r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the crate.",
                         "Icon" : null
                     },
                     "Weight" : 25,
@@ -461,7 +461,7 @@
                     "Description" : {
                         "Id" : "outcome_1_2",
                         "Name" : "Bay Two C",
-                        "Details" : "You choose the Missiles and Ballistics weapons. \r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the crate.",
+                        "Details" : "You choose the Missiles and Ballistics weapons. \r\n\r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the crate.",
                         "Icon" : null
                     },
                     "Weight" : 25,
@@ -568,7 +568,7 @@
                     "Description" : {
                         "Id" : "outcome_2_0",
                         "Name" : "Bay Three A",
-                        "Details" : "You choose the Equipment and Salvage. \r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the rather large crate.",
+                        "Details" : "You choose the Equipment and Salvage. \r\n\r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the rather large crate.",
                         "Icon" : null
                     },
                     "Weight" : 50,
@@ -632,7 +632,7 @@
                     "Description" : {
                         "Id" : "outcome_2_1",
                         "Name" : "Bay Three B",
-                        "Details" : "You choose the Equipment and Salvage. \r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the rather large crate.",
+                        "Details" : "You choose the Equipment and Salvage. \r\n\r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the rather large crate.",
                         "Icon" : null
                     },
                     "Weight" : 25,
@@ -696,7 +696,7 @@
                     "Description" : {
                         "Id" : "outcome_2_2",
                         "Name" : "Bay Three C",
-                        "Details" : "You choose the Equipment and Salvage. \r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the rather large crate.",
+                        "Details" : "You choose the Equipment and Salvage. \r\n\r\nA short time later, Sumire is already back with the goods as Yang excitedly dances around the rather large crate.",
                         "Icon" : null
                     },
                     "Weight" : 25,

@@ -8,20 +8,20 @@
     "UIName": "Shadow Hawk",
     "Id": "chassisdef_shadowhawk_SHD-2B",
     "Name": "Shadow Hawk",
-    "Details": "This variant of Shadowhawk was converted to a mini-seige mech with extreme reach. Even with an Endo Steel frame and an XL engine, its speed was reduced in order to free up enough tonnage to incorporate its mainly ballistic loadout. A pair of ER medium lasers were added for closer encounters and a small artillery piece rounds out its ordnance.",
+    "Details": "This variant of Shadowhawk was converted to a mini-seige mech with extreme reach. Even with an Endo Steel frame and an XL engine, its speed was reduced in order to free up enough tonnage to incorporate its mainly ballistic loadout. A pair of ER medium lasers were added for closer encounters.",
     "Icon": "uixTxrIcon_shadowhawk"
   },
-  "MovementCapDefID": "movedef_mech_medium_4",
+  "MovementCapDefID": "movedef_mech_medium_3",
   "PathingCapDefID": "pathingdef_medium",
   "HardpointDataDefID": "hardpointdatadef_shadowhawk",
   "PrefabIdentifier": "chrPrfMech_shadowhawkBase-001",
   "PrefabBase": "shadowhawk",
   "Tonnage": 55,
-  "InitialTonnage": 13.5,
+  "InitialTonnage": 11,
   "weightClass": "MEDIUM",
   "BattleValue": 5320000,
   "Heatsinks": 0,
-  "TopSpeed": 65,
+  "TopSpeed": 50,
   "TurnRadius": 90,
   "MaxJumpjets": 3,
   "Stability": 130,
@@ -216,7 +216,7 @@
     "tagSetSourceFile": ""
   },
   "StockRole": "Skirmisher",
-  "YangsThoughts": "Why would somebody even do this? Turning a ShadowHawk into a baby Bullshark is utter madness. Just keep in mind, that it has enormous range so there is no need to bring it any closer to the fight than you have to.",
+  "YangsThoughts": "Turning a ShadowHawk into a Junior Jagermech is either utter madness or sheer genius! Just keep in mind, that it has enormous range so there is no need to bring it any closer to the fight than you have to. Even though it sports a smaller engine, it still has its jump jets to quickly reposition between volleys.",
   "FixedEquipment": [
 	{
       "MountedLocation": "LeftTorso",
@@ -268,7 +268,7 @@
     },
     {
       "MountedLocation": "LeftTorso",
-      "ComponentDefID": "Gear_EndoSteel_2_Slot",
+      "ComponentDefID": "Gear_EndoSteel_1_Slot",
       "SimGameUID": "",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
@@ -280,7 +280,7 @@
     },
     {
       "MountedLocation": "RightTorso",
-      "ComponentDefID": "Gear_EndoSteel_3_Slot",
+      "ComponentDefID": "Gear_EndoSteel_4_Slot",
       "SimGameUID": "",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,

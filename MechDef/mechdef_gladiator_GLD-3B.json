@@ -1,42 +1,33 @@
 {
     "MechTags": {
         "items": [
-            "unit_release",
             "unit_mech",
-            "unit_medium",
-            "unit_ready",
-            "unit_lance_tank",
-            "unit_lance_assassin",
+            "unit_heavy",
+            "unit_jumpOK", 
+            "unit_range_long",
+            "unit_speed_high",
+            "unit_armor_high",
             "unit_lance_vanguard",
-            "unit_role_sniper",
-			"unit_range_long",
-			"unit_jumpOK",
-			"Davion",
-			"Kurita",
-			"Liao",
-			"Marik",
-			"Steiner",
-			"TaurianConcordat",
-			"MagistracyOfCanopus",
-			"unit_common"
+            "unit_role_brawler",
+            "unit_release"
         ],
         "tagSetSourceFile": ""
     },
-    "ChassisID": "chassisdef_shadowhawk_SHD-2B",
+    "ChassisID": "chassisdef_gladiator_GLD-3B",
     "HeraldryID": null,
     "Description": {
-        "Cost": 6751490,
-        "Rarity": 1,
+        "Cost": 6000000,
+        "Rarity": 3,
         "Purchasable": false,
         "Manufacturer": null,
         "Model": null,
-        "UIName": "Shadow Hawk SHD-2B",
-        "Id": "mechdef_shadowhawk_SHD-2B",
-        "Name": "Shadow Hawk",
-        "Details": "This variant of Shadowhawk was converted to a mini-seige mech with extreme reach. Even with an Endo Steel frame and an XL engine, its speed was reduced in order to free up enough tonnage to incorporate its mainly ballistic loadout. A pair of ER medium lasers were added for closer encounters.",
-        "Icon": "uixTxrIcon_shadowhawk"
+        "UIName": "Gladiator GLD-3B",
+        "Id": "mechdef_gladiator_GLD-3B",
+        "Name": "Noble Gladiator",
+        "Details": "The Noble Gladiator is an attempt to fill the long-range close-support role that it was originally intended to do. Weight freed up by its Double HeatSink XL Engine and Ferro-Fibrous Armour allowed it to upgrade its missiles to LRM 15s, double its Medium Laser as well as its ammo. This fully realized Gladiator has renewed purpose upon the battlefield it was destined to dominate.",
+        "Icon": "uixTxrIcon_gladiator"
     },
-    "simGameMechPartCost": 610000,
+    "simGameMechPartCost": 600000,
     "Version": 1,
     "Locations": [
         {
@@ -51,112 +42,68 @@
         {
             "DamageLevel": "Functional",
             "Location": "LeftArm",
-            "CurrentArmor": 75,
+            "CurrentArmor": 80,
             "CurrentRearArmor": -1,
             "CurrentInternalStructure": 45,
-            "AssignedArmor": 75,
+            "AssignedArmor": 80,
             "AssignedRearArmor": -1
         },
         {
             "DamageLevel": "Functional",
             "Location": "LeftTorso",
-            "CurrentArmor": 75,
-            "CurrentRearArmor": 25,
+            "CurrentArmor": 100,
+            "CurrentRearArmor": 20,
             "CurrentInternalStructure": 65,
-            "AssignedArmor": 75,
-            "AssignedRearArmor": 25
+            "AssignedArmor": 100,
+            "AssignedRearArmor": 20
         },
         {
             "DamageLevel": "Functional",
             "Location": "CenterTorso",
-            "CurrentArmor": 100,
+            "CurrentArmor": 137,
             "CurrentRearArmor": 25,
             "CurrentInternalStructure": 90,
-            "AssignedArmor": 100,
+            "AssignedArmor": 137,
             "AssignedRearArmor": 25
         },
         {
             "DamageLevel": "Functional",
             "Location": "RightTorso",
-            "CurrentArmor": 75,
-            "CurrentRearArmor": 25,
+            "CurrentArmor": 100,
+            "CurrentRearArmor": 20,
             "CurrentInternalStructure": 65,
-            "AssignedArmor": 75,
-            "AssignedRearArmor": 25
+            "AssignedArmor": 100,
+            "AssignedRearArmor": 20
         },
         {
             "DamageLevel": "Functional",
             "Location": "RightArm",
-            "CurrentArmor": 75,
+            "CurrentArmor": 80,
             "CurrentRearArmor": -1,
             "CurrentInternalStructure": 45,
-            "AssignedArmor": 75,
+            "AssignedArmor": 80,
             "AssignedRearArmor": -1
         },
         {
             "DamageLevel": "Functional",
             "Location": "LeftLeg",
-            "CurrentArmor": 80,
+            "CurrentArmor": 100,
             "CurrentRearArmor": -1,
             "CurrentInternalStructure": 65,
-            "AssignedArmor": 80,
+            "AssignedArmor": 100,
             "AssignedRearArmor": -1
         },
         {
             "DamageLevel": "Functional",
             "Location": "RightLeg",
-            "CurrentArmor": 80,
+            "CurrentArmor": 100,
             "CurrentRearArmor": -1,
             "CurrentInternalStructure": 65,
-            "AssignedArmor": 80,
+            "AssignedArmor": 100,
             "AssignedRearArmor": -1
         }
     ],
     "inventory": [
-        {
-            "MountedLocation": "Head",
-            "ComponentDefID": "Gear_Cockpit_Majesty_M_M_MagestrixAlpha",
-            "SimGameUID": null,
-            "ComponentDefType": "Upgrade",
-            "HardpointSlot": -1,
-            "GUID": null,
-            "DamageLevel": "Functional",
-            "prefabName": null,
-            "hasPrefabName": false
-        },	
-        {
-            "MountedLocation": "LeftTorso",
-            "ComponentDefID": "Weapon_Laser_MediumLaserER_0-STOCK",
-            "SimGameUID": null,
-            "ComponentDefType": "Weapon",
-            "HardpointSlot": 0,
-            "GUID": null,
-            "DamageLevel": "Functional",
-            "prefabName": null,
-            "hasPrefabName": false
-        },
-        {
-            "MountedLocation": "LeftTorso",
-            "ComponentDefID": "Gear_JumpJet_Generic_Standard",
-            "SimGameUID": null,
-            "ComponentDefType": "JumpJet",
-            "HardpointSlot": -1,
-            "GUID": null,
-            "DamageLevel": "Functional",
-            "prefabName": null,
-            "hasPrefabName": false
-        },
-        {
-            "MountedLocation": "CenterTorso",
-            "ComponentDefID": "Gear_JumpJet_Generic_Standard",
-            "SimGameUID": null,
-            "ComponentDefType": "JumpJet",
-            "HardpointSlot": -1,
-            "GUID": null,
-            "DamageLevel": "Functional",
-            "prefabName": null,
-            "hasPrefabName": false
-        },
         {
             "MountedLocation": "CenterTorso",
             "ComponentDefID": "Gear_Gyro_Friedhof_Sparrow",
@@ -167,9 +114,9 @@
             "DamageLevel": "Functional",
             "prefabName": null,
             "hasPrefabName": false
-        },		
+        },
         {
-            "MountedLocation": "RightTorso",
+            "MountedLocation": "LeftArm",
             "ComponentDefID": "Weapon_Laser_MediumLaserER_0-STOCK",
             "SimGameUID": null,
             "ComponentDefType": "Weapon",
@@ -178,9 +125,20 @@
             "DamageLevel": "Functional",
             "prefabName": null,
             "hasPrefabName": false
-        },		
+        },
+                {
+            "MountedLocation": "LeftArm",
+            "ComponentDefID": "Weapon_Laser_MediumLaserER_0-STOCK",
+            "SimGameUID": null,
+            "ComponentDefType": "Weapon",
+            "HardpointSlot": 0,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
         {
-            "MountedLocation": "RightTorso",
+            "MountedLocation": "LeftLeg",
             "ComponentDefID": "Gear_JumpJet_Generic_Standard",
             "SimGameUID": null,
             "ComponentDefType": "JumpJet",
@@ -191,52 +149,30 @@
             "hasPrefabName": false
         },
         {
-            "MountedLocation": "RightArm",
-            "ComponentDefID": "Weapon_Autocannon_UAC2_NU_3-Mydron",
-            "SimGameUID": null,
-            "ComponentDefType": "Weapon",
-            "HardpointSlot": 0,
-            "GUID": null,
-            "DamageLevel": "Functional",
-            "prefabName": null,
-            "hasPrefabName": false
-        },
-        {
-            "MountedLocation": "RightArm",
-            "ComponentDefID": "Weapon_Autocannon_LB5X_2-GM",
-            "SimGameUID": null,
-            "ComponentDefType": "Weapon",
-            "HardpointSlot": 0,
-            "GUID": null,
-            "DamageLevel": "Functional",
-            "prefabName": null,
-            "hasPrefabName": false
-        },
-        {
-            "MountedLocation": "LeftArm",
-            "ComponentDefID": "Weapon_Autocannon_UAC2_NU_3-Mydron",
-            "SimGameUID": null,
-            "ComponentDefType": "Weapon",
-            "HardpointSlot": 0,
-            "GUID": null,
-            "DamageLevel": "Functional",
-            "prefabName": null,
-            "hasPrefabName": false
-        },
-        {
-            "MountedLocation": "LeftArm",
-            "ComponentDefID": "Weapon_Autocannon_LB5X_2-GM",
-            "SimGameUID": null,
-            "ComponentDefType": "Weapon",
-            "HardpointSlot": 0,
-            "GUID": null,
-            "DamageLevel": "Functional",
-            "prefabName": null,
-            "hasPrefabName": false
-        },		
-        {
             "MountedLocation": "LeftLeg",
-            "ComponentDefID": "Ammo_AmmunitionBox_Generic_AC2_Double",
+            "ComponentDefID": "Gear_JumpJet_Generic_Standard",
+            "SimGameUID": null,
+            "ComponentDefType": "JumpJet",
+            "HardpointSlot": -1,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
+        {
+            "MountedLocation": "LeftTorso",
+            "ComponentDefID": "Weapon_LRM_LRM15_0-STOCK",
+            "SimGameUID": null,
+            "ComponentDefType": "Weapon",
+            "HardpointSlot": 0,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
+        {
+            "MountedLocation": "RightTorso",
+            "ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
             "SimGameUID": null,
             "ComponentDefType": "AmmunitionBox",
             "HardpointSlot": -1,
@@ -244,13 +180,123 @@
             "DamageLevel": "Functional",
             "prefabName": null,
             "hasPrefabName": false
-        },		
+        },
+                {
+            "MountedLocation": "RightTorso",
+            "ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
+            "SimGameUID": null,
+            "ComponentDefType": "AmmunitionBox",
+            "HardpointSlot": -1,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
+        {
+            "MountedLocation": "LeftTorso",
+            "ComponentDefID": "Gear_HeatSink_Generic_Double",
+            "SimGameUID": null,
+            "ComponentDefType": "HeatSink",
+            "HardpointSlot": -1,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
+        {
+            "MountedLocation": "CenterTorso",
+            "ComponentDefID": "Gear_JumpJet_Generic_Standard",
+            "SimGameUID": null,
+            "ComponentDefType": "JumpJet",
+            "HardpointSlot": -1,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
+        {
+            "MountedLocation": "LeftTorso",
+            "ComponentDefID": "Gear_HeatSink_Generic_Double",
+            "SimGameUID": null,
+            "ComponentDefType": "HeatSink",
+            "HardpointSlot": -1,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
         {
             "MountedLocation": "RightLeg",
-            "ComponentDefID": "Ammo_AmmunitionBox_Generic_LB5X_Double",
+            "ComponentDefID": "Gear_JumpJet_Generic_Standard",
+            "SimGameUID": null,
+            "ComponentDefType": "JumpJet",
+            "HardpointSlot": -1,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
+        {
+            "MountedLocation": "RightLeg",
+            "ComponentDefID": "Gear_JumpJet_Generic_Standard",
+            "SimGameUID": null,
+            "ComponentDefType": "JumpJet",
+            "HardpointSlot": -1,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
+        {
+            "MountedLocation": "RightTorso",
+            "ComponentDefID": "Weapon_LRM_LRM15_0-STOCK",
+            "SimGameUID": null,
+            "ComponentDefType": "Weapon",
+            "HardpointSlot": 0,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
+        {
+            "MountedLocation": "RightTorso",
+            "ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
             "SimGameUID": null,
             "ComponentDefType": "AmmunitionBox",
             "HardpointSlot": -1,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
+                {
+            "MountedLocation": "RightTorso",
+            "ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
+            "SimGameUID": null,
+            "ComponentDefType": "AmmunitionBox",
+            "HardpointSlot": -1,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
+        {
+            "MountedLocation": "RightArm",
+            "ComponentDefID": "Weapon_Laser_MediumLaserER_0-STOCK",
+            "SimGameUID": null,
+            "ComponentDefType": "Weapon",
+            "HardpointSlot": 1,
+            "GUID": null,
+            "DamageLevel": "Functional",
+            "prefabName": null,
+            "hasPrefabName": false
+        },
+                {
+            "MountedLocation": "RightArm",
+            "ComponentDefID": "Weapon_Laser_MediumLaserER_0-STOCK",
+            "SimGameUID": null,
+            "ComponentDefType": "Weapon",
+            "HardpointSlot": 1,
             "GUID": null,
             "DamageLevel": "Functional",
             "prefabName": null,

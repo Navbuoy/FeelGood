@@ -1,0 +1,245 @@
+{
+    "Description" : {
+        "Id" : "event_mw_id10t",
+        "Name" : "ID Ten Tee",
+        "Details" : "You happen to be in the Mech Bay when [[TGT_MW,{TGT_MW.Callsign}]] with  [[SCN_MW,{SCN_MW.Callsign}]] in tow both approach Yang with a question. \"Chief?  [[SCN_MW,{SCN_MW.Callsign}]] told me that my mech had an ID-10-T recall that you might need to look into.\"\r\n\r\nYang looks at you to make sure you're hearing this, then turns back to {TGT_MW.Callsign} and replies with admirable gravity, \"Wow, this is the first I am hearing about this but I am not all surprised. Usually, it just takes a hard whack with a mallet to service that particular issue with your BattleMech?\"",
+        "Icon" : "uixTxrSpot_MechWarriorsTalking.png"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 40,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+            "items" : [
+                "pilot_naive"
+            ],
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : "Tags/PilotTags"
+        },
+        "RequirementComparisons" : [
+            {
+                "obj" : "Injuries",
+                "op" : "Equal",
+                "val" : 0,
+                "valueConstant" : "0"
+            }
+        ]
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [
+        {
+            "Scope" : "SecondaryMechWarrior",
+            "Requirements" : {
+                "Scope" : "SecondaryMechWarrior",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [
+                        "pilot_naive"
+                    ],
+                    "tagSetSourceFile" : "Tags/PilotTags"
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Ask Yang to check your Mech too.",
+                "Details" : "safe choice",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "stump Yang",
+                        "Details" : "You insert yourself into the conversation. \"Hey, that sounds serious! Maybe you should do an audit and inspect the entire MechBay too.\"\r\n\r\nGrabbing the biggest Mallet of the nearby bench, you hand it off to Yang while watching him dead in the eye daring him to take a swing, \"Here you can start with mine.\" \r\n\r\nThat brings Yang up short. His mouth opens, shuts, and opens again. One eye begins twitching until he finally settles on what to say. \"That won't be necessary I am sure we can find a more gentler solution sir.\"\r\n\r\nYou breathe a sigh of relief as Yang starts to chuckle and whisper, \"Be careful what you wish for Commander.\"\r\n\r\n[[TGT_MW,{TGT_MW.Callsign}]] beams with satisfaction, \"Thank you for coming to my rescue Commander. I might be a little shy but I ain't no dummy. Fool me once, shame on you. Fool me twice and, umm....erm\" \r\n\r\nAs they struggle to find their words you jump in blurting, \"You'll kick their ass!\"\r\n\r\n{TGT_MW.Callsign} laughs out loud, nodding in agreement. Thanking you once more as they turn to leave with their teammate. \r\n\r\n\"Looks like they're learning...\", Yang chuckles.\r\n\r\nSmiling you say, \"And not a moment too soon.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [
+                                    "pilot_morale_low",
+                                    "pilot_naive"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_morale_high"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 30
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Watch what happens.",
+                "Details" : "Watch what happens",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "clipboard",
+                        "Details" : "[[TGT_MW,{TGT_MW.Callsign}]] quickly interrupts Yang before he can get started. \"Sadly, I believe the problem is an old IBM issue.\"\r\n\r\nYang turns around with a quizzical expression, \"IBM issue?\"\r\n\r\n\"IBM, yes, Idiot Behind Mech and in [[SCN_MW,{SCN_MW.Callsign}]]'s case, there is no cure!\"\r\n\r\nYang slaps his thigh with a loud snort. \"That was a good one. Going to add that to my material.\"\r\n\r\n[[SCN_MW,{SCN_MW.Callsign}]] turns beat red as {TGT_MW.Callsign} makes a hasty exit while sticking out their tongue.\r\n\r\nWith {SCN_MW.Callsign} in close pursuit, they can be heard echoing throughout the corridor, \"No cure huh? Wait'll I get my hands on you.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [
+                                    "pilot_morale_low",
+                                    "pilot_naive"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_morale_high"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 30
+                        },
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [
+                                    "pilot_morale_high"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "SecondaryMechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "pilot_morale_low"
+                                ],
+                                "tagSetSourceFile" : "Tags/PilotTags"
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 14
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

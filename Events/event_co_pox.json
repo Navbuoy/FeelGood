@@ -1,0 +1,260 @@
+{
+    "Description" : {
+        "Id" : "event_co_pox",
+        "Name" : "No Good Deed...",
+        "Details" : "No sooner than you complete your resupply, you find yourself at the MedBay talking to one of your veteran Doctors.\r\n\r\nDr. Dent calls over his fellow Medtek \"Naomi, the Commander is here. She has been working on a new aggressive treatment that would neutralize the disfiguring effects of the dreaded Periphery Pox.\"\r\n\r\n\"What's your progress?\"\r\n\r\nDr. Naomi Stein nods, \"We have started a number of test subjects on the new anti-viral regimen that is based on thousands of organic nanobots performing gene therapy on a scale never achieved before. This would eradicate the disease in hours and save millions of lives especially those in Stage 4 of the disease where the mortality rate drops below 5%!\"\r\n\r\n\"Test Subjects?\"\r\n\r\nThe doctor motions towards the row of plexiglass pens with a lone enormous guinea pig residing in one of them.\r\n\r\n\"That's a lot of pens for a single Guinea Pig?\" Darius quizzes.\r\n\r\nDr. Dent coughs, \"Umm, there were some complications with the early treatments so our first three subjects didn't make it and we just lost another one today but as you can see this one is doing just fine.\"\r\n\r\nExchanging a glance with Darius, you assert, \"I trust you are following proper medical procedure and disposal around this virus?\"\r\n\r\nBoth doctors nod nervously.\r\n\r\n\"Commander, please understand that GP here is an outstanding success. He not only fought off the disease but has grown both physically as well as mentally.\" \r\n\r\nDarius exclaims, \"I thought you guys were overfeeding him!\"\r\n\r\n\"So you're saying that this treatment not only makes one resistant to Periphery Pox but has the added benefit of making one both stronger and smarter?\"\r\n\r\nExcitedly Dr. Stein continues, \"Yes, this vaccine could potentially serve as a broad spectrum treatment for a variety of debilitating diseases. The possibilities are endless.\"\r\n\r\n\"...as well as the CBills the factions would pay for something like this.\", Darius concludes.\r\n\r\nYou stoically quell the jubilation, \"I am somewhat alarmed that you took it upon yourselves run experiments with a highly contagious disease aboard the Argo without my express consent.\"\r\n\r\nThe Doctors fall silent.\r\n\r\nRaising your hand to stop any appeals, you continue, \"That being said, I cannot deny the results. I will allow you to continue your work provided you update us weekly on your progress but no more surprises understand?\"\r\n\r\nThe doctors grinning nod eagerly.\r\n\r\n\"Dismissed.\" \r\n\r\nDarius adds, \"Seems like a case of <i>it's better to ask for forgiveness than for permission...</i>\"\r\n\r\n\"Well that's a great way to find themselves floating home...\" ,You counter as you make your way toward the bridge.\r\n\r\nHours later, while sipping coffee at the bridge you receive a hail from the section housing the primary cooling tanks. <pilot 1>, \"Commander, it's <pilot3>. They're down!\"\r\n\r\n\"What happened? What's their status?\" \r\n\r\n\"They're barely breathing but it looks like they got attacked.\"\r\n\r\n\"More like they got mauled! Looks like bite and claw marks all over them...they've lost a lot of blood but we are already got some medkits here. There's something loose on the Argo and it ain't human!\", <pilot 2> shouts.\r\n\r\nYou nod at Darius as he initiates the hail, \"All personnel, This is a Code Purple. Please head to the safety of your quarters immediately!\"",
+        "Icon" : "uixTxrSpot_MedBay.png"
+    },
+    "Scope" : "Company",
+    "Weight" : 100,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : []
+        },
+        "ExclusionTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+                "event_co_pox"
+            ]
+        },
+        "RequirementComparisons" : [
+            {
+                "obj" : "Travel",
+                "op" : "Equal",
+                "val" : 0,
+                "valueConstant" : "0"
+            }
+        ]
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : [
+                    "planet_other_plague"
+                ]
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Split into Teams of Two",
+                "Details" : "Bondsman",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Interrogate",
+                        "Details" : "Days later, your guest is healing up remarkably well. The MedTechs are stunned at both the rate she is healing as well as her overall conditioning.\r\n\r\nAfter regaining some strength, she introduces herself as Point Commander Calista Folkner of Clan Jade Falcon. She candidly discloses various aspects about the Clans: their field tactics, their rich history and even their odd customs. \r\n\r\nCalista goes on to explain that she is now your Bondsman with her wearing a Bondcord around her right wrist. This three stranded cord represents the three virtues of combat skill, integrity and loyalty. When she has displayed one of these virtues to your satisfaction, as Bondholder, you are free to cut one of the cords. Ultimately, her freedom is earned with the cutting of the final cord.\r\n\r\nAfter careful consideration, you reluctantly agree after ephasizing that as far as you're concerned, this is a binding contract with a paid salary and not indentured servitude. You realize your crew will be less than enthusiatic about her staying on but you feel you've made the right choice and in time she will prove to be an asset, both on and off the field.\r\n\r\n[[DM.BaseDescriptionDefs[LoreGemini],Gemini has joined your crew]]",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "event_co_forkInTheRoad"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_AddRoster",
+                                    "value" : "pilot_Gemini",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Split into Teams of Three",
+                "Details" : "Bondsman",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Bondsman",
+                        "Details" : "Days later, your guest is healing up remarkably well. The MedTechs are stunned at both the rate she is healing as well as her overall conditioning.\r\n\r\nAfter regaining some strength, she introduces herself as Point Commander Calista Folkner of Clan Jade Falcon. She candidly discloses various aspects about the Clans: their field tactics, their rich history and even their odd customs. \r\n\r\nCalista goes on to explain that she is now your Bondsman with her wearing a Bondcord around her right wrist. This three stranded cord represents the three virtues of combat skill, integrity and loyalty. When she has displayed one of these virtues to your satisfaction, as Bondholder, you are free to cut one of the cords. Ultimately, her freedom is earned with the cutting of the final cord.\r\n\r\nAfter careful consideration, you reluctantly agree after ephasizing that as far as you're concerned, this is a binding contract with a paid salary and not indentured servitude. You realize your crew will be less than enthusiatic about her staying on but you feel you've made the right choice and in time she will prove to be an asset, both on and off the field.\r\n\r\n[[DM.BaseDescriptionDefs[LoreGemini],Gemini has joined your crew]]",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : [
+                                    "event_co_forkInTheRoad"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "-2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_AddRoster",
+                                    "value" : "pilot_Gemini",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Split into Teams of Four",
+                "Details" : "Hand her over to Steiner",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "Handover",
+                        "Details" : "Taking the crew's tense state into consideration, you conclude that it's best to hand her over to House Steiner. Darius eagerly nods and is visibly relieved when she is finally in the custody of Lyran Intelligence Officers.\r\n\r\nYour XO circles back and quips, \"Well looks like we made House Steiner happy.\" \r\n\r\nAfter an awkward pause, \"Commander, do you think we did the right thing?\"\r\n\r\nWithout hesitation, you mutter, \"It beats having a bloody mutiny on our hands! Whatever she is, she is not worth the trouble! She should be grateful we didn't hand her over to the Combine!\"\r\n\r\nDarius nods in agreement as you both board the Leopard, happily looking forward to your next lucrative contract.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/CompanyTags",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "2",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Reputation.Steiner",
+                                    "value" : "3",
+                                    "set" : false,
+                                    "valueConstant" : "[rep_gain_large]"
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "tagSetSourceFile" : "tags/EventTags",
+        "items" : []
+    }
+}

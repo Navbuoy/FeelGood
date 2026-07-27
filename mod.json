@@ -27,7 +27,8 @@
 	{ "Type": "PilotDef", "Path": "Pilots", "AddToDB": true },
 	{ "Type": "Sprite", "Path": "Sprites", "AddToDB": true },
 	{ "Type": "Sprite", "Path": "Portraits", "AddToDB": true },
-    { "Type": "Texture2D", "Path": "Textures", "AddToAddendum": "ConversationTexture" },	
+    { "Type": "Texture2D", "Path": "Textures", "AddToAddendum": "ConversationTexture" },
+    { "Type": "UpgradeDef", "Path": "Upgrades", "AddToDB": true },	
     { "Type": "WeaponDef", "Path": "WeaponDef", "AddToDB": true }	
 
     ]

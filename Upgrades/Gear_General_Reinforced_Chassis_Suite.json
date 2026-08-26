@@ -1,0 +1,69 @@
+{
+  "Description": {
+    "Cost": 0,
+    "Rarity": 99,
+    "Purchasable": false,
+    "Manufacturer": "Bubby",
+    "Model": "",
+    "UIName": "Reinforced Chassis Suite",
+    "Id": "Gear_General_Reinforced_Chassis_Suite",
+    "Name": "Reinforced Chassis Suite",
+    "Details": "The Reinforced Chassis Suite allows the venerable Hunchback to absorb additional punishment despite sporting an XL Engine. The 4B's additional longevity in the field easily bestows this variant the title of Zombie Mech.",
+    "Icon": "uixSvgIcon_special_Equipment"
+  },
+  "BonusValueA": "- 15% Dmg.",
+  "BonusValueB": "",
+  "ComponentType": "Upgrade",
+  "ComponentSubType": "NotSet",
+  "PrefabIdentifier": "",
+  "InventorySize": 1,
+  "Tonnage": 0,
+  "AllowedLocations": "CenterTorso",
+  "DisallowedLocations": "All",
+  "CriticalComponent": false,
+  "statusEffects": [
+    {
+      "durationData": {
+        "duration": -1,
+        "stackLimit": 1
+      },
+      "targetingData": {
+        "effectTriggerType": "Passive",
+        "effectTargetType": "Creator",
+        "showInTargetPreview": true,
+        "showInStatusPanel": true
+      },
+      "effectType": "StatisticEffect",
+      "Description": {
+        "Id": "StatusEffect-RCS-DamageReduction",
+        "Name": "REINFORCED CHASSIS SUITE",
+        "Details": "This unit takes [AMT] less damage.",
+        "Icon": "uixSvgIcon_special_Equipment"
+      },
+      "statisticData": {
+        "appliesEachTick": false,
+        "effectsPersistAfterDestruction": false,
+        "statName": "DamageReductionMultiplierAll",
+        "operation": "Float_Multiply",
+        "modValue": "0.85",
+        "modType": "System.Single",
+        "additionalRules": "NotSet",
+        "targetCollection": "NotSet",
+        "targetWeaponCategory": "NotSet",
+        "targetWeaponType": "NotSet",
+        "targetAmmoCategory": "NotSet",
+        "targetWeaponSubType": "NotSet"
+      },
+      "nature": "Buff"
+    }
+  ],
+  "ComponentTags": {
+    "items": [
+      "BUILT-IN"
+    ],
+    "tagSetSourceFile": ""
+  },
+  "Custom": {
+    "Sorter": 0
+  }
+}

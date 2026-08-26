@@ -1,0 +1,121 @@
+{
+    "Description" : {
+        "Id" : "event_co_nobleG_Bubby",
+        "Name" : "Nobility Line",
+        "Details" : "As the Argo enters the Linhauiguan system, you're immediately reminded of how awful the devastation an orbital bombardment can cause. Deep craters can be viewed high from oribt. The atmospere is all but devoid of clouds. Just a barren wasteland as far as the eye can see. \r\n\r\nThe Leopard lands on yet another convenient plateau. The recognizable large bay doors embedded in the rock formation pulls into view. \r\n\r\nThe crew enters the bay with Yang breaking the silence with a little whistle.",
+        "Icon" : "uixTxrSpot_Linhauiguan"
+    },
+    "Scope" : "Company",
+    "Weight" : 1000,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+                "event_nobleB"
+            ]
+        },
+        "ExclusionTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+                "event_nobleG"
+            ]
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : [
+                    "planet_name_linhauiguan"
+                ]
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Continue",
+                "Details" : "Safe option",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Continue",
+                        "Details" : "Sumire tilts her head, \"Is that a Gladiator?\"\r\n\r\nYang laughs, \"It sure is! Now, this is what a Gladiator was truly meant to be. Another refurbished XL engine and enough ordnance to give an Archer pause. It has CASE in its right torso as well as a top grade Rangefinder while retaining its jump jets.\"\r\n\r\nSmiling Darius adds, \"Awesome, a 55 tonner. That means the last one is likely an 80 tonne Assault!\"\r\n\r\nClearing her throat, Farah jumps in, \"We have the last set of coordinates, Commander. Our last stop is <b>Espia</b>.\"\r\n\r\nSumire nods.\r\n\r\nYang blurts out, \"Let's end this hunt and get that Assault mech before someone else does!\"\r\n\r\nYou clap your hands, \"Agreed. Let's rush over to Espia and call it a day.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "event_nobleG"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "System_ShowRewards",
+                                    "value" : "itemCollection_loot_event_NobleG",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "tagSetSourceFile" : "tags/EventTags",
+        "items" : []
+    }
+}

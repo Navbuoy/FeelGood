@@ -1,0 +1,121 @@
+{
+    "Description" : {
+        "Id" : "event_co_nobleS_Bubby",
+        "Name" : "Nobility Line",
+        "Details" : "Upon reaching the New Roland system, you send Sumire out in the Leopard to scan ahead at the coordinates that were provided by your mysterious would-be benefactor.\r\n\r\nWith both Farah and Yang riding along, you impress upon Sumire not to take any unncessary risks as she makes her approach.  Patiently you await their reply.  \r\n\r\nFinally, in what seems like forever, Sumire beams over the Leopard's cockpit view as they descend into a remote area hundreds of kilometers from the small mining town of Mikken's Outpost. At a glance, it looks like a normal ridgeline. Suddenly, the perspective changes as they land on an unnaturally flat plateau. Huge doors coloured to match the surrounding rock formation loom over the Leopard. \r\n\r\nDarius nervously bobbing his head, breaks the silence, \"So far so good. Are you confident you can open the bay doors?\"\r\n\r\nFarah smiles, \"It's password protected. Luckily, they also gave us the logins.\"\r\n\r\n\"Yeah, I don't see any defence systems at all Commander. Seems safe enough to me.\" ,Yang replies as he steps towards the console.\r\n\r\nFarah sighs, \"Well, here goes nothing...\"\r\n\r\nAfter entering the password on the console, N-O-B-L-E, the doors slowly open revealing a surprisingly small bay with lights triggering in a series of sharp snaps.\r\n\r\nGiddy with excitement, Yang recklessly rushes in.",
+        "Icon" : "uixTxrSpot_NewRoland"
+    },
+    "Scope" : "Company",
+    "Weight" : 1000,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+                "event_noble"
+            ]
+        },
+        "ExclusionTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+                "event_nobleS"
+            ]
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : [
+                    "planet_name_newroland"
+                ]
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Continue",
+                "Details" : "Safe option",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Continue",
+                        "Details" : "Sumire scrunches her nose and sarcastically blurts out, \"Yay! It's a Spider.\"\r\n\r\nFarah nods in bewilderment, \"This certainly was not what I was expecting.\"\r\n\r\nDarius turns to you, \"Well, at least it's a free mech right?\"\r\n\r\n\"As long as no one got hurt. At least this further legitimizes our mystery samaritan's claims. They did say 250 tonnes total so I'm guessing there's a lot bigger mechs to find out there?\"\r\n\r\nYang already fidgeting in the Spider's cockpit interrupts the crew's disappointment, \"Stop the Presses! This thing is heavily modified!\"\r\n\r\nSumire tilts her head and squints, \"The cockpit does look a bit weird from what I can tell.\"\r\n\r\nYang shakes his head, \"You have no idea. The cockpit  has been completely overhauled and reinforced. The weapons are SLDF stock and there's even what looks like a trap door allowing the pilot to eject! The entire console and sensors are cutting edge. Wait a minute?  I can't believe it. Is that an ECM unit? Who are these guys?\"\r\n\r\nYang hops out of the cockpit and circles the mech, trying to make sense of it all.\r\n\r\n\"This thing is still made of paper but with all the upgrades, you would have a tough time trying to land a hit on her. This is a certified gem, Commander!\"\r\n\r\nSmiling you casually reply, \"Wrap it up! We'll take it!\"\r\n\r\nFarah quietly adds, \"We also found a new set of coordinates and what I think is another system, Commander. Does the name Huanghuadian sound familiar to anyone?\"\r\n\r\nSumire shakes her head, \"Never heard of it. It sounds Capellan. Yang?\"\r\n\r\nYang grins, \"Sure, but you won't find it on any maps - at least not on current ones. It's known as <b>Tincalunas</b> now.\"\r\n\r\nDarius folds his arms, \"I thought you were from Bryant?\"\r\n\r\nYang nods, \"I am but my family are of Huanghuadian descent, long before the Succession Wars drove them out. My Grandma would always tell me ancient stories about the old homestead.\"\r\n\r\nPleasantly surprised, \"OK, Tincalunas it is. Let's check it out as soon we can.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "event_nobleS"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "System_ShowRewards",
+                                    "value" : "itemCollection_loot_event_NobleS",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "tagSetSourceFile" : "tags/EventTags",
+        "items" : []
+    }
+}

@@ -1,0 +1,128 @@
+{
+    "Description" : {
+        "Id" : "event_co_nobleB_Bubby",
+        "Name" : "Nobility Line",
+        "Details" : "A short while later, the Argo pulls into the Bonavista system. Sumire takes the Leopard to scan ahead at the coordinates that were discovered at the Tincalunas site.\r\n\r\nIn a short while, the eager Leopard crew disembarks and quickly opens the large bay doors in order to escape the bitter polar winds.\r\n\r\nDarius probes, \"Did you find anything guys?\"\r\n\r\nSumire is a bit stunned but manages to slip a response, \"Yes, it's C-bills! And there's a note, it says...<i>Here's a little gas money</i>.\"\r\n\r\nYou straighten up and say, \"Hey, every little bit helps! Yang you're awful quiet, is everything alright?\"\r\n\r\n\"Oh, for sure! I'm good\" Yang answers distractedly. \r\n\r\nFarah smiles, \"He's already playing around in a BlackJack Commander.\"",
+        "Icon" : "uixTxrSpot_Bonavista"
+    },
+    "Scope" : "Company",
+    "Weight" : 1000,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+                "event_nobleA"
+            ]
+        },
+        "ExclusionTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+                "event_nobleB"
+            ]
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : [
+                    "planet_name_bonavista"
+                ]
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Continue",
+                "Details" : "Safe option",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Continue",
+                        "Details" : "Yang chirps back, \"Well someone has to do it. This is a bit of a mix from the last two. It has another top notch Rangefinder, an AMS unit and another ECM. I don't know where this guy is finding this stuff but it looks brand new?\"\r\n\r\nDarius responds, \"Each mech is bigger than before. That's still less than half the total weight Commander. If this pattern holds, we might end up with an Assault mech at the end of this?\"\r\n\r\nYou counter, \"Or maybe a couple of heavies? It is a bit of a leap but it sounds like we might only have two more stops to make?\"\r\n\r\n\"Yeah, this thing has an XL Engine too. It looks refurbished. Maybe this guy is a scavenger boss?\"\r\n\r\nFarah shakes her head at Yang, \"The level of technology we've seen so far means that this person or people know their way around LosTech. Maybe they are ex-Comstar?\"\r\n\r\nYang shrugs, \"I'm as flabberghasted as you Farah. Endo-Steel, SLDF weaponry. It just don't make sense. Even ex-Comstar wouldn't just give this stuff away. All I can say for sure is that this mech is a bonafide sniper. Just park it far from the action and let it loose.\"\r\n\r\nDarius replies, \"Well done crew! Let's grab the booty and the next set of coordinates.\"\r\n\r\nFarah already working fervently on a nearby panel, \"Here we are. The next system is <b>Linhauiguan</b>.\"\r\n\r\nSumire smiles, \"Another nearby system. Let's do this!\"\r\n\r\nLooking around the bridge, you agree, \"To Linhauiguan we go!\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "event_nobleB"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Funds",
+                                    "value" : "250000",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                },
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "System_ShowRewards",
+                                    "value" : "itemCollection_loot_event_NobleB",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "tagSetSourceFile" : "tags/EventTags",
+        "items" : []
+    }
+}

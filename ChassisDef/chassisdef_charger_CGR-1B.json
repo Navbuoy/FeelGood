@@ -214,7 +214,7 @@
     "tagSetSourceFile": ""
   },
   "StockRole": "Scout",
-  "YangsThoughts": "This rather pecliar mech was found lying in the ruins of Brundage. It proved temperamental as its native 400 fusion engine was being installed according to Lester. It was completely stripped down and its chassis was upgraded to Endo Steel and Ferro Fibrous. With the recovered weight, dual RAPP cannons were added along with intergrated Heavy Arm Mods. A modified CQC module taken from a fallen Vulcan was coupled with an ECM unit in its Center Torso. The head was completely rebuilt due to serious underlying structural issues making way for the addition of an enhanced Reinforced Cockpit  and Console Sutie.",
+  "YangsThoughts": "This mech was completely stripped down and its chassis was upgraded to Endo Steel and Ferro Fibrous. With the recovered weight, dual RAPP cannons were added along with intergrated Heavy Arm Mods. A modified CQC module taken from a fallen Vulcan was coupled with an ECM unit in its Center Torso. The head was completely rebuilt due to serious underlying structural issues making way for the addition of an enhanced Reinforced Cockpit and Console Sutie.",
   "FixedEquipment": [
     {
       "MountedLocation": "Head",

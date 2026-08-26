@@ -1,7 +1,7 @@
 {
     "Description" : {
         "Id" : "event_mw_jinxedPokerNight",
-        "Name" : "Trivia Night",
+        "Name" : "Poker Night",
         "Details" : "It's Poker Night, and one of the largest casinos in {TGT_SYSTEM.Name} is packed. [[TGT_MW,{TGT_MW.Callsign}]] entered and has been on an uncharacteristic hot streak.\r\n\r\n\"Come on, Commander!\" Darius leans closer, but still has to shout to be heard. \"{TGT_MW.Callsign} just got the last four hands. Even at a minimum bet, we would have made \u00A25,000. Let's see if we can make some money tonight!\"\r\n\r\nJust then, [[SCN_MW,{SCN_MW.Callsign}]] totters past, drink in hand. Darius grabs {SCN_MW.OBJ}. \"Better yet, {SCN_MW.Callsign} here can help us land a seat at the biggest table.\"",
         "Icon" : "uixTxrSpot_Lucky"
     },

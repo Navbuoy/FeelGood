@@ -6,7 +6,7 @@
         "Icon" : "uixTxrSpot_humble"
     },
     "Scope" : "MechWarrior",
-    "Weight" : 1000,
+    "Weight" : 10,
     "Requirements" : {
         "Scope" : "MechWarrior",
         "RequirementTags" : {

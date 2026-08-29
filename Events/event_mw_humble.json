@@ -1,0 +1,141 @@
+{
+    "Description" : {
+        "Id" : "event_mw_humble",
+        "Name" : "Humble Pie",
+        "Details" : "While walking through the MechBay, you notice one of your elite pilots, [[TGT_MW,{TGT_MW.Callsign}]], working shoulder-to-shoulder with the lowliest tech assistants, covered in dirt and helping dust-mop down the Mech Bay floor after an hour of using compressed air guns to blow trapped dirt from a series of battlemech legs.\r\n\r\nYou never noticed the change in them until now. It's almost like they lost the chip on their shoulder overnight.",
+        "Icon" : "uixTxrSpot_humble"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 1000,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+            "tagSetSourceFile" : "",
+            "items" : [
+                "pilot_noble"
+            ]
+        },
+        "ExclusionTags" : {
+            "tagSetSourceFile" : "",
+            "items" : []
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Continue",
+                "Details" : "continue",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Humble",
+                        "Details" : "Instead of relaxing in the lounge, [[TGT_MW,{TGT_MW.Callsign}]] spent the afternoon swapping stories and heavy lifting with the maintenance crew. The ship's techs are deeply impressed by the pilot's lack of arrogance.\r\n\r\nYour gaze finally catches the pilot's attention and you motion them to come over with a warm smile. \r\n\r\n{TGT_MW.Callsign} strolls over, \"Yes, Commander?\"\r\n\r\n\"Well, I couldn't help but notice your contributions to the Mech Bay here. That is highly uncharacteristic for nobles like yourself to help out like you did.\"\r\n\r\nThe pilot looks down almost as if they are trying to hide their embarassment, \"Well Sir, I had quite the epiphany last mission, I was watching AC fire sweep past my cockpit. Then I spotted people, just everyday people, cowering for their lives as the shells exploded over their heads. They were struggling to find shelter from the raining molten armour - <i>my armour</i>! That could have easily been me down there.\"\r\n\r\nYou nod as you slap {TGT_MW.Callsign}'s shoulder, \"It looks like you finally get it now, the galaxy doesn't care who your family is.\"\r\n\r\nAfter pausing, you ask, \"So what happened to the civilians you found?\"\r\n\r\n\" I did my job, sir. I did just like you told me. I protected them from the Pirates as any good mechwarrior should.\"\r\n\r\nAs you part ways, you can easily see why morale across the entire Argo has steadily improved as well as the crew's renewed energy giving your Mech Bay a much-needed tune-up.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "pilot_humble"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "pilot_noble"
+                                ]
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "MechTechSkill",
+                                    "value" : "1000",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 30
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "tagSetSourceFile" : "tags/EventTags",
+        "items" : []
+    }
+}

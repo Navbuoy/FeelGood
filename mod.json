@@ -24,9 +24,13 @@
     { "Type": "SimGameMilestoneSet", "Path": "MilestoneSets" },
     { "Type": "SimGameConversations", "Path": "SimGameConversations" },
 	{ "Type": "ItemCollectionDef", "Path": "ItemCollections", "AddToDB": true },
+    { "Type": "LifepathNodeDef", "Path": "LifepathNode"},
 	{ "Type": "PilotDef", "Path": "Pilots", "AddToDB": true },
+    { "Type": "QuirkDef", "Path": "QuirkDefs"},
 	{ "Type": "Sprite", "Path": "Sprites", "AddToDB": true },
 	{ "Type": "Sprite", "Path": "Portraits", "AddToDB": true },
+    { "Type": "CustomTag", "Path": "Tags" },
+	{ "Type": "CustomTagSet", "Path": "TagSets" },
     { "Type": "Texture2D", "Path": "Textures", "AddToAddendum": "ConversationTexture" },
     { "Type": "UpgradeDef", "Path": "Upgrades", "AddToDB": true },	
     { "Type": "WeaponDef", "Path": "WeaponDef", "AddToDB": true }	

@@ -15,7 +15,7 @@
 
     { "Type": "CastDef", "Path": "CastDef" },
 	{ "Type": "ChassisDef", "Path": "ChassisDef", "AddToDB": true },
-	{ "Type": "BaseDescriptionsDef", "Path": "Descriptions", "AddToDB": true },
+	{ "Type": "BaseDescriptionDef", "Path": "Descriptions", "AddToDB": true },
     { "Type": "ContractOverride", "Path": "Contracts" },
     { "Type": "FlashpointDef", "Path": "Flashpoints" },	
 	{ "Type": "SimGameEventDef", "Path": "Events", "AddToDB": true },

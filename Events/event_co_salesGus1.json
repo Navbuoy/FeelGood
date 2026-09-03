@@ -783,7 +783,7 @@
                     "Description" : {
                         "Id" : "outcome_3_0",
                         "Name" : "Decline Making a Purchase",
-                        "Details" : "You politely decline Gus' offer yet assure him that you do look forward do business with him the next time you meet. \r\nGus smiles and appreciates your candor while Yang sulks in the corner, not saying a word as everyone goes about their business.",
+                        "Details" : "You politely decline Gus' offer yet assure him that you do look forward do business with him the next time you meet. \r\n\r\nGus smiles and appreciates your candor while Yang sulks in the corner, not saying a word as everyone goes about their business.",
                         "Icon" : null
                     },
                     "Weight" : 100,

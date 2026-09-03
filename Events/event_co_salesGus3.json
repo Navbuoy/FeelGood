@@ -1,0 +1,158 @@
+{
+    "Description" : {
+        "Id" : "event_co_salesGus3",
+        "Name" : "Long Distance Delivery",
+        "Details" : "You find yourself on the bridge, responding to a hail from a familiar vessel. Darius is already in talks with your favourite scoundrel, [[DM.BaseDescriptionDefs[LoreGus],Gus Flanagan]].\r\n\r\nYang rushes the screen, \"Gus, how you doin'? Have any goodies for us today?\" \r\n\r\nGus always smiling, \"Wow, I finally tracked you guys down. You sure do get around. And to answer your question Yang, <i>Tis the season</i> and our mutual benefactor sends you Yuletide gifts.\"\r\n\r\nYang answers before anyone has a chance to open their mouths, \"We'll take it!\"\r\n\r\nDarius stifling a laugh, \"What he means to say is, Thank-you.\"\r\n\r\nAnxiously wincing at the thought of owing a mystery person a favour, \"With all these <i>gifts</i> our friend <b>U.B.</b> keeps sending us. Would they be still open to any monetary reciprocation?\"\r\n\r\nShaking his head, Gus explains, \"Uncle Bubby doesn't need it. He's just that type of guy, always on the move, always scavenging in the weirdest places and when he likes you, he'll give you the shirt off his back.\"\r\n\r\nWith your concern satisfactorily addressed, you unfold your arms, \"With that out of the way, like Yang said...We'll take it!\"\r\n\r\nSumire jumps in, \"Ask your Bubby friend, if he's got a hot tub lying around?\"\r\n\r\nLaughing, Gus fires back, \"I'll gladly pass the message on to him. He's got a thing for pretty ladies.\"\r\n\r\nYang rolling up his pant leg, showing off the metal underneath, \"How about us sexy Mech Techs?\"\r\n\r\nGasps and stifled laughter float throughout the bridge, as Darius makes the final docking arrangements for both Sumire and Gus.",
+        "Icon" : "uixTxrSpot_GusBucc"
+    },
+    "Scope" : "Company",
+    "Weight" : 1000,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+                "AidBucc",
+                "event_nobleC",
+                "timeline_3026_12_20"
+            ]
+        },
+        "ExclusionTags" : {
+            "tagSetSourceFile" : "Tags/CompanyTags",
+            "items" : [
+                "xmas"
+            ]
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "Tags/PilotTags",
+                "items" : []
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        },
+        {
+            "Scope" : "Commander",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "",
+                "items" : []
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        },
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "Tags/PlanetTags",
+                "items" : []
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "- Let's go out there and get them!",
+                "Details" : "Gifts",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "tagSetSourceFile" : "",
+                        "items" : []
+                    },
+                    "ExclusionTags" : {
+                        "tagSetSourceFile" : "",
+                        "items" : []
+                    },
+                    "RequirementComparisons" : []
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Gifts",
+                        "Details" : "A short time later, Sumire is already back with the gifts as Yang and his crew eagerly tear into the numerous large crates.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : [
+                                    "xmas"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "System_ShowRewards",
+                                    "value" : "itemCollection_loot_event_Gusgift",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "tagSetSourceFile" : "tags/EventTags",
+        "items" : []
+    }
+}

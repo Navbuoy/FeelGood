@@ -10,6 +10,9 @@ Exclusively for Battletech Tactics
 
 The events are spread out from the dates of 3025 - 3055.
 
+Let's face it, The World of Battletech can be a unforgiving treacherous place.
+Also, there were events and statuses (primarily negative ones) that doomed the player to a negative events loop, like Nobles constantly fighting with their team-mates.
+
 Just unzip the file and throw the FeelGood folder in your Battletech Mods folder and launch your game.
 
 TIP: Low on weapons and parts? A visit to an uninhabited system might be the fix you need. It doesn't hurt to be nice...

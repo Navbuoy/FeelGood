@@ -10,8 +10,8 @@ Exclusively for Battletech Tactics
 
 The events are spread out from the dates of 3025 - 3055.
 
-Let's face it, The World of Battletech can be a unforgiving treacherous place.
-Also, there were events and statuses (primarily negative ones) that doomed the player to a negative events loop, like Nobles constantly fighting with their team-mates.
+Let's face it, The World of Battletech can be an unforgiving treacherous place so it doesn't hurt to lighten up every once in a while.
+In the Vanilla version of Battletech, there were events and statuses (primarily negative ones) that doomed the player to a negative events loop, like Nobles constantly fighting with their commoner team-mates.
 Well, this little mod was created to address that and add a little fun back into the career.
 
 Remember, it's a game - Have Fun!

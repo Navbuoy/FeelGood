@@ -51,7 +51,7 @@
             "RequirementTags" : {
                 "tagSetSourceFile" : "Tags/PlanetTags",
                 "items" : [
-                    "planet_pop_none"
+                    "planet_pop_small"
                 ]
             },
             "ExclusionTags" : {

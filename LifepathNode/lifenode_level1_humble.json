@@ -59,7 +59,9 @@
             "tagSetSourceFile": ""
           },
           "RemovedTags": {
-            "items": null,
+            "items": [
+              "pilot_noble"
+            ],
             "tagSetSourceFile": ""
           },
           "Stats": [
@@ -98,7 +100,7 @@
         },
         "RequirementComparisons": []
       },
-      "Weight": 15,
+      "Weight": 0,
       "NextNodeTags": {
         "items": [
           "node_level2",

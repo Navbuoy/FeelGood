@@ -44,7 +44,14 @@
                 "tagSetSourceFile" : "",
                 "items" : []
             },
-            "RequirementComparisons" : []
+            "RequirementComparisons" : [
+                {
+                    "obj" : "ExperienceSpent",
+                    "op" : "LessThan",
+                    "val" : 30000,
+                    "valueConstant" : "30000"
+                }
+            ]
         },
         {
             "Scope" : "StarSystem",

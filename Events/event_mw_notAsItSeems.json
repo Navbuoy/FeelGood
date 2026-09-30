@@ -1,0 +1,518 @@
+{
+    "Description" : {
+        "Id" : "event_mw_notAsItSeems",
+        "Name" : "More Than Meets the Eye",
+        "Details" : "You receive a summons from a Doctor in MedBay only to find to your surprise [[TGT_MW,{TGT_MW.Callsign}]] sitting down dejectedly before you all. {TGT_MW.Gender?NonBinary:They're|Male:He's|Female:She's} rocking back and forth in their chair, struggling to cope with the news.\r\n\r\nShooting the doctor a glare, \"OK, you have my attention. What is going on with {TGT_MW.Callsign}?\"\r\n\r\nDarius, who was already briefed of the situation speaks up, \"It appears that {TGT_MW.Det} clumsiness is due to a previously undiagnosed medical condition.\"\r\n\r\nPuzzled you reply, \"How did something like this get missed for so long?\"\r\n\r\nFinally drawing the courage to speak, the Doctor explains, \"You see, their condition was due to wear and tear. What made it so hard to diagnose was there were so few symptoms as {TGT_MW.Callsign} never complained about suffering from any form of pain in the past. Basically, they're struggling with spinal cord compression due to a narrowing canal in their neck.\"\r\n\r\n\"Alright, so what's our options then?\"",
+        "Icon" : "uixTxrSpot_Klutz"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 1000,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+            "tagSetSourceFile" : "Tags/PilotTags",
+            "items" : [
+                "pilot_klutz"
+            ]
+        },
+        "ExclusionTags" : {
+            "tagSetSourceFile" : "Tags/PilotTags",
+            "items" : [
+                "pilot_morale_low"
+            ]
+        },
+        "RequirementComparisons" : [
+            {
+                "obj" : "ExperienceSpent",
+                "op" : "GreaterThan",
+                "val" : 150,
+                "valueConstant" : "150"
+            }
+        ]
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope" : "Company",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "",
+                "items" : []
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        },
+        {
+            "Scope" : "Commander",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "",
+                "items" : []
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        },
+        {
+            "Scope" : "StarSystem",
+            "RequirementTags" : {
+                "tagSetSourceFile" : "",
+                "items" : []
+            },
+            "ExclusionTags" : {
+                "tagSetSourceFile" : "",
+                "items" : []
+            },
+            "RequirementComparisons" : []
+        }
+    ],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Let {TGT_MW.Callsign} decide",
+                "Details" : "Continue",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Continue",
+                        "Details" : "After an awkward pause, [[TGT_MW,{TGT_MW.Callsign}]] opens up, \"I love piloting mechs. I honestly can't see myself doing anything else. If you will continue to put up with me, I will do my best to earn my keep here Commander.\"\r\n\r\nYou assure the pilot with a pat on the back, \"We've invested a lot of time and energy into you. The last thing we want is to give-up on you without a fight. If your condition gets any worse then we will cross that bridge together but for now, you take it easy as we need you on the field as soon as the Doctor clears you.\"\r\n\r\n\"You are clearing him, aren't you Doctor?\", Darius grins menacingly.\r\n\r\n\"Yes, {TGT_MW.Gender?NonBinary:they're|Male:he's|Female:she's} clear to go as their condition isn't currently life threatening nor causing any discomfort, but...\"\r\n\r\nYou raise your hand to prompt the MedTech to spill their disclaimer.\r\n\r\n\"As I was saying, with a fully upgraded Medbay at our disposal, we could easily perform the surgery and have them good as new in no time.\"\r\n\r\n{TGT_MW.Callsign} jumps out of {TGT_MW.Det} seat, \"Awesome! Thanks Doc and thank you Commander. You won't regret this!\"\r\n\r\nDarius turns to you, \"Seems like we some other options to look into Commander.\"\r\n\r\nYou wearily smile and nod as you make your way back to the bridge, now with another added expense to worry about. Deep down, you know it will eventually pay for itself so it's only a matter of time...",
+                        "Icon" : null
+                    },
+                    "Weight" : 75,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 60
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : [
+                                    "pilot_morale_high"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 30
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_1",
+                        "Name" : "Retire",
+                        "Details" : "{TGT_MW.Callsign} just continues to sit in their seat, refusing to look up or make eye contact.\r\n\r\nAfter a small eternity, {TGT_MW.SUBJ} finally speak, \"I have problems getting dressed. It takes me a long time to do some of the most menial things Commander. I'm a liability out there and I can't risk any of my teammates just because I can't face facts.\"\r\n\r\nDarius' jaw tightens, \"What are you saying {TGT_MW.SUBJ}?\"\r\n\r\nStaring you dead in the eye, \"It's over! I'm tendering my resignation effective immediately Commander.\"\r\n\r\n\"If that's how you feel then we will grant your request. Go to the Barracks and clear out your stuff and Darius will see you off at the nearest port.\"\r\n\r\nResting your hand on {TGT_MW.Det} shoulder, \"...but not before we throw you the mother of all retirement parties first!\" \r\n\r\nYou see a smile grow across the pilot's face as they get up to shake your hand.\r\n\r\n\"Thank you Commander for everything.\", as they fight to hold back the tears.\r\n\r\nThe party draws everyone from all around. It seems that {TGT_MW.Callsign} was more popular than {TGT_MW.SUBJ} let on. You know this was ultimately the right call because the only other option was their name on the Memorial Wall.",
+                        "Icon" : null
+                    },
+                    "Weight" : 25,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Fire",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_1",
+                "Name" : "Bed Rest and Rehab",
+                "Details" : "Bed Rest and Rehab",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_0",
+                        "Name" : "Bed Rest and Rehab",
+                        "Details" : "The MechTech pleads to take {TGT_MW.Callsign} off of Active Duty and enforce a strict diet plan for the pilot to follow.\r\n\r\nThe hope is with enough time and attention their condition might reverse naturally without surgical intervention. \r\n\r\nYou give Darius a glance and nod in approval.\r\n\r\nOver the following weeks, you notice the pilot 's gradual progression. Their posture and overall general appearance strikes you as growing stronger every day.\r\n\r\nThe downtime was long but the end result was worth the wait as {TGT_MW.Callsign} is given a clean bill of health and ready to return to Active Duty once again.",
+                        "Icon" : null
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 60
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : [
+                                    "pilot_klutz"
+                                ]
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_SetTimeout",
+                                    "value" : "60",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_1_1",
+                        "Name" : "No Change",
+                        "Details" : "The MechTech pleads to take {TGT_MW.Callsign} off of Active Duty and enforce a strict diet plan for the pilot to follow.\r\n\r\nThe hope is with enough time and attention their condition might reverse naturally without surgical intervention. \r\n\r\nYou give Darius a glance and nod in approval.\r\n\r\nOver the following weeks, you fail to notice any progression in {TGT_MW.Callsign} at all. \r\n\r\nThe downtime was long but the end result was all for naught as the MedTech relunctantly grants {TGT_MW.Callsign} a <i>clean enough</i> bill of health despite {TGT_MW.Det} negligible improvement.",
+                        "Icon" : null
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 60
+                        },
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_SetTimeout",
+                                    "value" : "60",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_2",
+                "Name" : "Surgery",
+                "Details" : "[Argo: Hospital Bays]",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "tagSetSourceFile" : "Tags/CompanyTags",
+                        "items" : [
+                            "argo_medbay_hospital"
+                        ]
+                    },
+                    "ExclusionTags" : {
+                        "tagSetSourceFile" : "",
+                        "items" : []
+                    },
+                    "RequirementComparisons" : []
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_2_0",
+                        "Name" : "Surgery",
+                        "Details" : "The MedTech pushes for the surgery as they have the facilities to perform the operation with minimal risk.\r\n\r\nYou shoot Darius a glance and nod of approval.\r\n\r\nOver the following weeks, you notice the pilot's gradual progression. Their posture and overall general appearance strikes you as growing stronger every day as they continue following their strict rehab regimen.\r\n\r\nThe downtime was long but the end result was worth the wait as {TGT_MW.Callsign} is given a clean bill of health and ready to return to Active Duty once again.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : [
+                                    "pilot_athletic"
+                                ]
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "Tags/PilotTags",
+                                "items" : [
+                                    "pilot_klutz"
+                                ]
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_SetTimeout",
+                                    "value" : "60",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 60
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_3",
+                "Name" : "Retire Them",
+                "Details" : "Retire Them",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_3_0",
+                        "Name" : "Retire Them",
+                        "Details" : "{TGT_MW.Callsign} just continues to sit in their seat, refusing to look up or make eye contact.\r\n\r\nAfter a small eternity, you address the elephant in the room, \"As I see it, if you can no longer function at an adequate level in the cockpit then I can't risk putting you in the field {TGT_MW.Callsign}.\"\r\n\r\n{TGT_MW.Callsign} looks up and nods solemnly.\r\n\r\n\"Go to the Barracks and clear out your stuff and Darius will see you off at the nearest port.\"\r\n\r\nResting your hand on {TGT_MW.Det} shoulder, \"...but not before we throw you the mother of all retirement parties first!\" \r\n\r\nYou see a smile grow across the pilot's face as they get up to shake your hand.\r\n\r\n\"Thank you Commander for everything.\", as they fight to hold back the tears.\r\n\r\nThe party draws everyone from all around. It seems that {TGT_MW.Callsign} was more popular than {TGT_MW.SUBJ} let on. You know this was ultimately the right call because the only other option was their name on the Memorial Wall.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "MechWarrior",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : null,
+                            "Actions" : [
+                                {
+                                    "Type" : "MechWarrior_Fire",
+                                    "value" : "1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "RemovedTags" : {
+                                "tagSetSourceFile" : "",
+                                "items" : []
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "ExclusionTags" : {
+                    "tagSetSourceFile" : "",
+                    "items" : []
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "tagSetSourceFile" : "tags/EventTags",
+        "items" : []
+    }
+}

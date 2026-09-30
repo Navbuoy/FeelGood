@@ -1,0 +1,13 @@
+itemCollection_loot_event_GusD1,"Sale: Take It All",,
+Weapon_Laser_LargeLaser_3-Magna,Weapon,2,10
+Weapon_MachineGun_MachineGun_2-VMI,Weapon,2,1
+Weapon_Laser_MediumLaserER_0-STOCK,Weapon,2,6
+Weapon_TAG_Standard_2-Ceres_Arms,Weapon,1,10
+Weapon_Autocannon_AC20_3-Kali_Yama,Weapon,1,10
+Weapon_Narc_Standard_2-Kali_Yama,Weapon,1,10
+Weapon_LRM_LRM20_3-Zeus,Weapon,1,1
+Weapon_SRM_SRM6_3-Valiant,Weapon,2,10
+Gear_HeatSink_Generic_Thermal-Exchanger-I,HeatSink,1,4
+mechdef_cyclops_CP-10-Q,MechPart,1,10
+Gear_Cockpit_Ceres_Metals_Reinforced,Upgrade,1,6
+Gear_HeatSink_Generic_Double,HeatSink,1,10

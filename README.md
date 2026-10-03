@@ -18,5 +18,6 @@ Remember, it's a game - Have Fun!
 
 Just unzip the file and throw the FeelGood folder in your Battletech Mods folder and launch your game.
 
-TIP: Low on weapons and parts? A visit to a small population system might be the fix you need. It doesn't hurt to be nice...
+TIP: Low on weapons and parts? A visit to a small population system might be the fix you need.
+
 2nd TIP: Be patient, sometimes it's just best to stay in orbit for a little while to find what you're looking for.

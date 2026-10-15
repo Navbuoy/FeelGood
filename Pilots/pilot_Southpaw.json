@@ -1,0 +1,61 @@
+{
+    "Description": {
+        "Id": "pilot_Southpaw",
+        "Name": "Southpaw",
+        "FirstName": "Lisa",
+        "LastName": "Steward-Ford",
+        "Callsign": "Southpaw",
+        "Gender": "Female",
+        "factionID": "NoFaction",
+        "Age": 23,
+        "Details": "Daughter of Terry Ford and Alexandra Steward. Lisa decided to leave the Ninth Illician Rangers and pursue her own path. Her father has always been a sore point of contention due his passing solidifying his legacy as a laughingstock of the family.\r\n\r\nHer fondest memories as a young child were riding in her father's lap as he took his 'bouncy' Charger for a stroll. She hyphenates her name to distance herself from the embarassment yet she still retains her father's preference for melee mechs when stepping onto the battlefield.",
+        "Icon": "guiTxrPort_Southpaw"
+    },
+    "BaseGunnery": "6",
+    "BonusGunnery": 0,
+    "BasePiloting": "9",
+    "BonusPiloting": 0,
+    "BaseGuts": "5",
+    "BonusGuts": 0,
+    "BaseTactics": "4",
+    "BonusTactics": 0,
+    "ExperienceUnspent": 2500,
+    "ExperienceSpent": 20000,
+    "Injuries": 0,
+    "Health": 3,
+    "LethalInjury": false,
+    "Incapacitated": false,
+    "Morale": 0,
+    "Voice": "f_pro06_tough",
+    "abilityDefNames": [
+                "TraitDefMeleeHit9",
+                "TraitDefUnsteadySet80",
+                "TraitDefEvasiveChargeAddTwo",
+                "TraitDefHealthAddOne",
+                "TraitDefWeaponHit6",
+                "TraitDefSprintIncrease20",
+                "TraitDefVeteranMechWarrior",
+                "AbilityDefP5",
+		        "AbilityDefP8",
+		        "AbilityDefGu5"
+    ],
+    "AIPersonality": "Undefined",
+    "PilotTags": {
+        "items": [
+            "pilot_steiner",
+			"pilot_athletic",
+            "pilot_brave",
+            "pilot_officer",
+            "pilot_military",
+            "pilot_mechwarrior",
+            "pilot_unconventional",
+            "pilot_sangfroid",
+            "pilot_striker",
+            "name_Southpaw"
+        ],
+        "tagSetSourceFile": ""
+    },
+    "PilotCost": 0,
+    "IsRonin": true,
+    "IsVanguard": false
+}

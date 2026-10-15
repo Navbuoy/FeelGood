@@ -6,7 +6,7 @@
         "Icon" : "uixTxrSpot_GusBucc"
     },
     "Scope" : "Company",
-    "Weight" : 10,
+    "Weight" : 40,
     "Requirements" : {
         "Scope" : "Company",
         "RequirementTags" : {

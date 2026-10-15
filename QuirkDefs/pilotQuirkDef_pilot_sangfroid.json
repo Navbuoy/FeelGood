@@ -1,0 +1,83 @@
+{
+  "id": "pilotQuirkDef_pilot_sangfroid",
+  "tag": "pilot_sangfroid",
+  "quirkName": "Sang-Froid",
+  "description": "+3 Heat Sinking & +5 Overheat Threshold",
+  "effectData": [
+    {
+      "durationData": {
+        "duration": -1,
+        "stackLimit": -1
+      },
+      "targetingData": {
+        "effectTargetType": "Creator",
+        "effectTriggerType": "Passive",
+        "hideApplicationFloatie": true,
+        "showInStatusPanel": false,
+        "showInTargetPreview": false
+      },
+      "effectType": "StatisticEffect",
+      "Description": {
+        "Details": "+3 Heat Sinking",
+        "Icon": "UixSvgIcon_specialEquip_System",
+        "Id": "StatusEffect-Affinity-HeavyMechBoost",
+        "Name": "Affinity Defence Boost"
+      },
+      "nature": "Buff",
+      "statisticData": {
+        "additionalRules": "NotSet",
+        "modType": "System.Int32",
+        "modValue": "3",
+        "operation": "Int_Add",
+        "statName": "HeatSinkCapacity",
+        "targetAmmoCategory": "NotSet",
+        "targetCollection": "NotSet",
+        "targetWeaponCategory": "NotSet",
+        "targetWeaponSubType": "NotSet",
+        "targetWeaponType": "NotSet"
+      }
+    },
+    {
+      "durationData": {
+        "duration": -1,
+        "stackLimit": -1
+      },
+      "targetingData": {
+        "effectTriggerType": "Passive",
+        "triggerLimit": 0,
+        "extendDurationOnTrigger": 0,
+        "specialRules": "NotSet",
+        "effectTargetType": "Creator",
+        "range": 0,
+        "forcePathRebuild": false,
+        "forceVisRebuild": false,
+        "showInTargetPreview": false,
+        "showInStatusPanel": true
+      },
+      "effectType": "StatisticEffect",
+      "Description": {
+        "Id": "StatusEffect-Overheat_Threshold-T1",
+        "Name": "Increased Overheat Level",
+        "Details": "Overheat threshold increased by 5",
+        "Icon": "uixSvgIcon_equipment_HeatBank"
+      },
+      "nature": "Buff",
+      "statisticData": {
+        "appliesEachTick": false,
+        "effectsPersistAfterDestruction": false,
+        "statName": "OverheatLevel",
+        "operation": "Int_Add",
+        "modValue": "5",
+        "modType": "System.Int32",
+        "additionalRules": "NotSet",
+        "targetCollection": "NotSet",
+        "targetWeaponCategory": "NotSet",
+        "targetWeaponType": "NotSet",
+        "targetAmmoCategory": "NotSet",
+        "targetWeaponSubType": "NotSet"
+      }
+    }
+  ],
+  "quirkEffects": []
+
+}

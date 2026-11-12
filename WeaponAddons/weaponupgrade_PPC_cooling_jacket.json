@@ -1,0 +1,8 @@
+{
+  "Id": "weaponupgrade_PPC_cooling_jacket",
+  "addonType": "weaponupgrade_PPC_cooling_jacket",
+  "targetComponentTags": [
+    "ppc_capacitor_attachable"
+  ],
+  "modes": []
+}

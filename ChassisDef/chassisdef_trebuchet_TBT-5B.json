@@ -214,7 +214,7 @@
       "DamageLevel": "Functional",
       "prefabName": null,
       "hasPrefabName": false
-    }
+    },
 	{
       "MountedLocation": "LeftTorso",
       "ComponentDefID": "Gear_XL_Engine",

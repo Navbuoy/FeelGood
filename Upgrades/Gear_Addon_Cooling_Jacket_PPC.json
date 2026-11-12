@@ -1,0 +1,112 @@
+{
+    "Custom": {
+    "AddonReference": {
+      "installedLocationOnly": true,
+      "autoTarget": true,
+      "WeaponAddonIds": [
+        "weaponupgrade_PPC_cooling_jacket"
+      ]
+    },
+    "Sorter": 3
+  },
+  "Description": {
+    "Cost": 240000,
+    "Rarity": 4,
+    "Purchasable": true,
+    "Manufacturer": "Bubby",
+    "Model": "Overcharged Liquid Jacket",
+    "UIName": "PPC Capacitive Jacket",
+    "Id": "Gear_Addon_Cooling_Jacket_PPC",
+    "Name": "PPC Capacitive Jacket",
+    "Details": "A high-risk upgrade wrapping volatile, high-capacity cooling jackets around a Particle Projector Cannon assembly. Boosts connected PPC damage by 15% and lowers its heat by 15%, but structural compromise will detonate the capacitor banks. Only functions when sharing a section with a PPC weapon.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger"
+  },
+  "BonusValueA": "- 15% Heat",
+  "BonusValueB": "+ 15% PPC Dmg.",
+  "ComponentType": "Upgrade",
+  "ComponentSubType": "NotSet",
+  "PrefabIdentifier": "",
+  "BattleTechStrikesKey": "",
+  "CanExplode": true,
+   "statusEffects": [
+    {
+    "durationData" : {
+        "duration" : -1,
+        "stackLimit" : 1
+    },
+    "targetingData" : {
+        "effectTriggerType" : "Passive",
+        "effectTargetType" : "Creator",
+        "showInTargetPreview" : true,
+        "showInStatusPanel" : true
+    },
+    "effectType" : "StatisticEffect",
+    "Description" : {
+        "Id": "PPC_Jacket",
+        "Name": "PPC Cooling Jacket",
+        "Details": "Reduces heat by 15%.",
+        "Icon": "uixSvgIcon_equipment_ThermalExchanger"
+    },
+    "statisticData" : {
+        "appliesEachTick" : false,
+        "effectsPersistAfterDestruction" : false,
+        "statName" : "HeatGenerated",
+        "operation" : "Float_Multiply",
+        "modValue" : "0.85",
+        "modType" : "System.Single",
+        "additionalRules" : "NotSet",
+        "targetCollection" : "Weapon",
+        "targetWeaponCategory" : "NotSet",
+        "targetWeaponType" : "PPC",
+        "targetAmmoCategory" : "NotSet",
+        "targetWeaponSubType" : "NotSet"
+    },
+    "nature" : "Buff"
+    },
+    {
+    "durationData" : {
+        "duration" : -1,
+        "stackLimit" : 1
+    },
+    "targetingData" : {
+        "effectTriggerType" : "Passive",
+        "effectTargetType" : "Creator",
+        "showInTargetPreview" : true,
+        "showInStatusPanel" : true
+    },
+    "effectType" : "StatisticEffect",
+    "Description" : {
+        "Id": "PPC_Jacket_DamageBoost",
+        "Name": "Capacitor Overcharge",
+        "Details": "PPC damage increased by 15%.",
+        "Icon": "uixSvgIcon_equipment_ThermalExchanger"
+    },
+    "statisticData" : {
+        "appliesEachTick" : false,
+        "effectsPersistAfterDestruction" : false,
+        "statName" : "DamagePerShot",
+        "operation" : "Float_Multiply",
+        "modValue" : "1.15",
+        "modType" : "System.Single",
+        "additionalRules" : "NotSet",
+        "targetCollection" : "Weapon",
+        "targetWeaponCategory" : "NotSet",
+        "targetWeaponType" : "PPC",
+        "targetAmmoCategory" : "NotSet",
+        "targetWeaponSubType" : "NotSet"
+    },
+    "nature" : "Buff"
+}
+  ],
+  "ComponentTags": {
+    "items": [
+      "component_type_variant"
+    ],
+    "tagSetSourceFile": ""
+  },
+  "InventorySize": 1,
+  "Tonnage": 1.5,
+  "AllowedLocations": "Torso, Arms",
+  "DisallowedLocations": "All",
+  "CriticalComponent": false
+}

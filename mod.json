@@ -32,7 +32,8 @@
     { "Type": "CustomTag", "Path": "Tags" },
 	{ "Type": "CustomTagSet", "Path": "TagSets" },
     { "Type": "Texture2D", "Path": "Textures", "AddToAddendum": "ConversationTexture" },
-    { "Type": "UpgradeDef", "Path": "Upgrades", "AddToDB": true },	
+    { "Type": "UpgradeDef", "Path": "Upgrades", "AddToDB": true },
+    { "Type": "WeaponAddonDef", "Path": "WeaponAddons", "AddToDB": true },	
     { "Type": "WeaponDef", "Path": "WeaponDef", "AddToDB": true }	
 
     ]

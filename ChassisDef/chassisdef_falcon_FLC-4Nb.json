@@ -198,7 +198,7 @@
         "tagSetSourceFile": ""
     },
     "StockRole": "Light Recon and Skirmisher",
-    "YangsThoughts": "I can't believe this thing has a genuine Snub-nose PPC! This loadout really suits this mechs in-close fighting style. Lighter units beware!"
+    "YangsThoughts": "I can't believe this thing has a genuine Snub-nose PPC! This loadout really suits this mechs in-close fighting style. Lighter units beware!",
     "FixedEquipment": [
 	{
       "MountedLocation": "LeftTorso",

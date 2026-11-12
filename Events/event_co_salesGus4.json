@@ -2,7 +2,7 @@
     "Description" : {
         "Id" : "event_co_salesGus4",
         "Name" : "Travelling Salesman",
-        "Details" : "You find yourself on the bridge, responding to the hails of [DM.BaseDescriptionDefs[LoreGus],Gus Flanagan]].\r\n\r\nYang shouts cheerfully, \"Gus, how you doin' you wonderful scoundrel?\" \r\n\r\nGus replies, \"As always, I'm glad to see my favourite customers. Even better, I finally got my logistical act together and am able to offer you even more of the exotic stuff thanks to our mutual friend! For 500 000 C-Bills you can choose a large crate of cargo from one of my two bays. <b>Bay One</b> has an assortment of weapons. <b>Bay Two</b> has mostly equipment and salvage now. Now, if you're feeling adventurous, <b>you can have it all for the low price of 900 000 C-Bills!</b>\"\r\n\r\nDarius turns to you, \"Well, Commander, care to do some business?\"",
+        "Details" : "You find yourself on the bridge, responding to the hails of [[DM.BaseDescriptionDefs[LoreGus],Gus Flanagan]].\r\n\r\nYang shouts cheerfully, \"Gus, how you doin' you wonderful scoundrel?\" \r\n\r\nGus replies, \"As always, I'm glad to see my favourite customers. Even better, I finally got my logistical act together and am able to offer you even more of the exotic stuff thanks to our mutual friend! For 500 000 C-Bills you can choose a large crate of cargo from one of my two bays. <b>Bay One</b> has an assortment of weapons. <b>Bay Two</b> has mostly equipment and salvage now. Now, if you're feeling adventurous, <b>you can have it all for the low price of 900 000 C-Bills!</b>\"\r\n\r\nDarius turns to you, \"Well, Commander, care to do some business?\"",
         "Icon" : "uixTxrSpot_GusBucc"
     },
     "Scope" : "Company",

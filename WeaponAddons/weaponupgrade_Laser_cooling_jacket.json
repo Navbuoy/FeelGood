@@ -1,0 +1,8 @@
+{
+  "Id": "weaponupgrade_Laser_cooling_jacket",
+  "addonType": "weaponupgrade_Laser_cooling_jacket",
+  "targetComponentTags": [
+      "laser_insulator_attachable"
+  ],
+  "modes": []
+}

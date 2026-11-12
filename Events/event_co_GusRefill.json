@@ -1,0 +1,144 @@
+{
+    "Description" : {
+        "Id" : "event_co_GusRefill",
+        "Name" : "Special Delivery",
+        "Details" : "On the bridge, you receive a long awaited hail from a familiar vessel. Darius is already in talks with everyone's favourite scoundrel, [[DM.BaseDescriptionDefs[LoreGus],Gus Flanagan]].\r\n\r\nYang rushes the screen, \"Gus, you're here! So you finally got our message.\" \r\n\r\nGus nods, \"Well, when my friends say they are desperately running low on those <i>special</i> guns, who am I to say no. Well, here they are, free of charge thanks to our mutual buddy.\"\r\n\r\nDarius intervenes, \"We can always do with some more custom arms from our pal U.B.\" \r\n\r\nYou gladly nod with approval as Darius makes the final docking arrangements for both Sumire and Gus.",
+        "Icon" : "uixTxrSpot_GusBucc"
+    },
+    "Scope" : "Company",
+    "Weight" : 1000,
+    "Requirements" : {
+        "Scope" : "Company",
+        "RequirementTags" : {
+            "items" : [
+                "AidBucc",
+                "event_nobleC"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "ExclusionTags" : {
+            "items" : [
+                "GusRefill"
+            ],
+            "tagSetSourceFile" : "Tags/CompanyTags"
+        },
+        "RequirementComparisons" : [
+            {
+                "obj" : "Item.WeaponDef.Weapon_Laser_ERSmallRAPP_1-Bubby",
+                "op" : "LessThanOrEqual",
+                "val" : 1,
+                "valueConstant" : "1"
+            }
+        ]
+    },
+    "AdditionalRequirements" : [],
+    "AdditionalObjects" : [],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "- By all means, please deliver us the goods!",
+                "Details" : "Gifts",
+                "Icon" : null
+            },
+            "RequirementList" : [
+                {
+                    "Scope" : "Company",
+                    "RequirementTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "ExclusionTags" : {
+                        "items" : [],
+                        "tagSetSourceFile" : ""
+                    },
+                    "RequirementComparisons" : []
+                }
+            ],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "Gifts",
+                        "Details" : "A short time later, Sumire is already back with the gifts as Yang and his crew eagerly tear into the numerous large crates.",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Morale",
+                                    "value" : "1",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : [
+                                {
+                                    "Type" : "System_ShowRewards",
+                                    "value" : "itemCollection_loot_event_GusR1",
+                                    "valueConstant" : null,
+                                    "additionalValues" : null
+                                }
+                            ],
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false,
+                            "ResultDuration" : 0
+                        },
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "GusRefill"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : true,
+                            "ResultDuration" : 180
+                        }
+                    ]
+                }
+            ],
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "PublishState" : "PUBLISHED",
+    "ValidationState" : "UNTESTED",
+    "EventType" : "NORMAL",
+    "OneTimeEvent" : false,
+    "Tags" : {
+        "items" : [],
+        "tagSetSourceFile" : "tags/EventTags"
+    }
+}

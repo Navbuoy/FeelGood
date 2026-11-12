@@ -3,7 +3,7 @@
    "internalName" : "Gus",
    "firstName" : "Gus",
    "lastName" : "Flanagan",
-   "callsign" : null,
+   "callsign" : "Klepto",
    "rank" : "Smuggler",
    "showRank" : true,
    "showCallSign" : false,

@@ -1,0 +1,78 @@
+{
+    "Custom": {
+    "AddonReference": {
+      "installedLocationOnly": true,
+      "autoTarget": true,
+      "WeaponAddonIds": [
+        "weaponupgrade_Laser_cooling_jacket"
+      ]
+    },
+    "Sorter": 3
+  },
+  "Description": {
+    "Cost": 240000,
+    "Rarity": 4,
+    "Purchasable": true,
+    "Manufacturer": "Bubby",
+    "Model": "Liquid Cooling Jacket",
+    "UIName": "Laser Cooling Jacket",
+    "Id": "Gear_Addon_Cooling_Jacket_Laser",
+    "Name": "Laser Cooling Jacket",
+    "Details": "An upgrade wrapping inert liquid cooling jackets around any compatible Laser weapon assembly thus lowering its heat by 15%. Only functions when sharing a section with an Laser weapon.",
+    "Icon": "uixSvgIcon_equipment_ThermalExchanger"
+  },
+  "BonusValueA": "- 15% Heat",
+  "BonusValueB": "",
+  "ComponentType": "Upgrade",
+  "ComponentSubType": "NotSet",
+  "PrefabIdentifier": "",
+  "BattleTechStrikesKey": "",
+  "CanExplode": false,
+   "statusEffects": [
+    {
+    "durationData" : {
+        "duration" : -1,
+        "stackLimit" : 1
+    },
+    "targetingData" : {
+        "effectTriggerType" : "Passive",
+        "effectTargetType" : "Creator",
+        "showInTargetPreview" : true,
+        "showInStatusPanel" : true
+    },
+    "effectType" : "StatisticEffect",
+    "Description" : {
+        "Id": "Laser_Jacket",
+        "Name": "Laser Cooling Jacket",
+        "Details": "Reduces heat by 15%.",
+        "Icon": "uixSvgIcon_equipment_ThermalExchanger"
+    },
+    "statisticData" : {
+        "appliesEachTick" : false,
+        "effectsPersistAfterDestruction" : false,
+        "statName" : "HeatGenerated",
+        "operation" : "Float_Multiply",
+        "modValue" : "0.85",
+        "modType" : "System.Single",
+        "additionalRules" : "NotSet",
+        "targetCollection" : "Weapon",
+        "targetWeaponCategory" : "Energy",
+        "targetWeaponType" : "NotSet",
+        "targetAmmoCategory" : "NotSet",
+        "targetWeaponSubType" : "NotSet"
+    },
+    "nature" : "Buff"
+}
+  ],
+  "ComponentTags": {
+    "items": [
+      "component_type_variant"
+    ],
+    "tagSetSourceFile": ""
+  },
+  "InventorySize": 1,
+  "Tonnage": 1,
+  "AllowedLocations": "Torso, Arms",
+  "DisallowedLocations": "All",
+  "CriticalComponent": false
+}

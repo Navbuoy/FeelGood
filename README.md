@@ -6,7 +6,7 @@
 <h3>Created for HBS' Battletech Tabletop video-game.</h3> 
 
 Exclusively for Battletech Tactics 
-(BEX CAC mod - compatible with both The Big Deal mod and Expension Pack)
+(BEX CAC mod - compatible with both The Big Deal mod and Expansion Pack)
 
 The events are spread out from the dates of 3025 - 3055.
 
